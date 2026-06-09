@@ -3,6 +3,12 @@
 
 //------------------- Process EMIC-Generate files result ----------------
 
+// Functions:
+
+
+// Events:
+
+
 //------------------- APIs (basic skeleton) -----------------------
 
 // LEDs
@@ -50,6 +56,7 @@
 
 
 // OLED Display (SSD1322 128x64 via PMP)
+
 
 
 

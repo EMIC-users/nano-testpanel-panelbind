@@ -15,14 +15,14 @@
 
 /* User Variables */
 uint16_t counter = 0;
+uint8_t miVar;
 
 void onReset()
 {
     counter = 0;
     Graphics_OLED_clear();
     Graphics_OLED_printAt(0, 0, 1, "COUNT:");
-    Graphics_OLED_bindAt(60, 0, 1, counter, 1, "%5u");
-    Graphics_OLED_bindAt(60, 40, 0, counter, 1, "%5u");
+    Graphics_OLED_bindAt(0, 60, 1, &counter, 1, "%4u");
     setTime1(1000, 'A');
 }
 
