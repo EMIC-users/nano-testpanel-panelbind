@@ -44,6 +44,7 @@ void Graphics_OLED_poll(void);
 void Graphics_OLED_clear(void);
 
 
+void Graphics_OLED_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
 
 
 void Graphics_OLED_printAt(uint8_t x, uint8_t y, uint8_t fontId, char* format, ...);
