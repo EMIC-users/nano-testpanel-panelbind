@@ -1,14 +1,10 @@
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led2.o: \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/led_Led2.c \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/led_Led2.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/gpio.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/pins.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/systemTimer.h
+build/default/production/led_Led2.o: led_Led2.c inc/led_Led2.h inc/gpio.h \
+ inc/pins.h inc/systemTimer.h
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/led_Led2.h:
+inc/led_Led2.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/gpio.h:
+inc/gpio.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/pins.h:
+inc/pins.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/systemTimer.h:
+inc/systemTimer.h:

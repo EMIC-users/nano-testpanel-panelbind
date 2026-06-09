@@ -1,32 +1,23 @@
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\EMICBus.o: \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/EMICBus.c \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/EMICBus.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2_driver.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/stream.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/stream.h \
- C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/userFncFile.h
+build/default/production/EMICBus.o: EMICBus.c inc/EMICBus.h \
+ inc/I2C2_driver.h inc/stream.h inc/streamOut.h inc/streamIn.h inc/I2C2.h \
+ inc/I2C2.h inc/streamIn.h inc/stream.h inc/userFncFile.h
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/EMICBus.h:
+inc/EMICBus.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2_driver.h:
+inc/I2C2_driver.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/stream.h:
+inc/stream.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h:
+inc/streamOut.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h:
+inc/streamIn.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2.h:
+inc/I2C2.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/I2C2.h:
+inc/I2C2.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h:
+inc/streamIn.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/stream.h:
+inc/stream.h:
 
-C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/userFncFile.h:
+inc/userFncFile.h:

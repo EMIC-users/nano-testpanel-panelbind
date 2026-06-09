@@ -28,6 +28,7 @@ void onReset()
 
 void etOut1()
 {
+    LEDs_Led1_state(2);
     counter = counter + 1;
 }
 
