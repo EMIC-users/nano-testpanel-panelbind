@@ -31,6 +31,15 @@ void etOut1()
 }
 
 
+void perrolLoco(void)
+{
+    Graphics_OLED_clear();
+    Graphics_OLED_printAt(35, 3, 0, "PERRO LOCO");
+    Graphics_OLED_bindAt(50, 34, 0, &counter, 1, "%4u");
+    Graphics_OLED_circle(67, 38, 20);
+}
+
+
 void PantallaPrincipal()
 {
     Graphics_OLED_clear();
@@ -45,14 +54,13 @@ void testCanvas(void)
 {
     Graphics_OLED_clear();
     Graphics_OLED_printAt(43, 2, 1, "TITULO");
-    Graphics_OLED_line(0, 56, 127, 56);
-    Graphics_OLED_printAt(73, 24, 0, "COUNT:");
+    Graphics_OLED_line(0, 57, 127, 57);
+    Graphics_OLED_printAt(88, 26, 0, "COUNT:");
     Graphics_OLED_bindAt(84, 40, 0, &counter, 1, "%05u");
-    Graphics_OLED_line(65, 14, 65, 56);
-    Graphics_OLED_line(59, 39, 59, 39);
-    Graphics_OLED_line(0, 14, 127, 14);
-    Graphics_OLED_circle(30, 34, 13);
-    Graphics_OLED_rect(0, 0, 127, 63);
+    Graphics_OLED_line(57, 14, 57, 56);
+    Graphics_OLED_line(0, 13, 127, 13);
+    Graphics_OLED_circle(31, 35, 19);
+    Graphics_OLED_rect(81, 37, 41, 13);
 }
 
 

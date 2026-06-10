@@ -14,6 +14,7 @@
 /* Function Prototypes */
 void onReset();
 void etOut1();
+void perrolLoco(void);
 void PantallaPrincipal();
 void testCanvas(void);
 
