@@ -53,6 +53,8 @@ void perrolLoco(void)
     Graphics_OLED_clear();
     Graphics_OLED_printAt(25, 22, 0, "PAD");
     Graphics_OLED_printAt(99, 21, 0, "NAV");
+    Graphics_OLED_bindAt(18, 38, 0, &key_pad, 0, "%4u");
+    Graphics_OLED_bindAt(90, 37, 0, &key_nav, 3, "%4d");
 }
 
 
