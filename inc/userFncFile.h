@@ -14,9 +14,9 @@
 /* Function Prototypes */
 void onReset();
 void etOut1();
+void Keyboard_Nav_onPress(uint8_t key);
+void Keyboard_Pad_onPress(uint8_t key);
 void perrolLoco(void);
-void PantallaPrincipal();
-void testCanvas(void);
 
 #endif /* USERFNCFILE_H */
 

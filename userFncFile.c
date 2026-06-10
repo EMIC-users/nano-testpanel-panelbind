@@ -16,6 +16,8 @@
 /* User Variables */
 uint16_t counter = 0;
 uint8_t miVar;
+char key_pad;
+char key_nav;
 
 void onReset()
 {
@@ -32,36 +34,25 @@ void etOut1()
 }
 
 
+void Keyboard_Nav_onPress(uint8_t key)
+{
+    key_nav = (char)(key);
+}
+
+
+void Keyboard_Pad_onPress(uint8_t key)
+{
+    key_pad = (char)(key);
+}
+
+
 void perrolLoco(void)
 {
     Graphics_OLED_clear();
-    Graphics_OLED_printAt(35, 3, 0, "PERRO LOCO");
-    Graphics_OLED_bindAt(50, 34, 0, &counter, 1, "%4u");
-    Graphics_OLED_circle(67, 38, 20);
-}
-
-
-void PantallaPrincipal()
-{
-    Graphics_OLED_clear();
-    Graphics_OLED_printAt(20, 0, 1, "TITULO");
-    Graphics_OLED_line(0, 20, 127, 20);
-    Graphics_OLED_printAt(0, 40, 1, "COUNT:");
-    Graphics_OLED_bindAt(50, 40, 1, &counter, 1, "%4u");
-}
-
-
-void testCanvas(void)
-{
-    Graphics_OLED_clear();
-    Graphics_OLED_printAt(43, 2, 1, "TITULO");
-    Graphics_OLED_line(0, 57, 127, 57);
-    Graphics_OLED_printAt(88, 26, 0, "COUNT:");
-    Graphics_OLED_bindAt(84, 40, 0, &counter, 1, "%05u");
-    Graphics_OLED_line(57, 14, 57, 56);
-    Graphics_OLED_line(0, 13, 127, 13);
-    Graphics_OLED_circle(31, 35, 19);
-    Graphics_OLED_rect(81, 37, 41, 13);
+    Graphics_OLED_bindAt(16, 34, 0, &key_pad, 1, "%4d");
+    Graphics_OLED_bindAt(87, 33, 0, &key_nav, 1, "%4d");
+    Graphics_OLED_printAt(25, 22, 0, "PAD");
+    Graphics_OLED_printAt(99, 21, 0, "NAV");
 }
 
 

@@ -44,16 +44,13 @@ void Graphics_OLED_poll(void);
 void Graphics_OLED_clear(void);
 
 
-void Graphics_OLED_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
 
 
 void Graphics_OLED_printAt(uint8_t x, uint8_t y, uint8_t fontId, char* format, ...);
 
 void Graphics_OLED_bindAt(uint8_t x, uint8_t y, uint8_t fontId, void* var, uint8_t type, char* format);
 
-void Graphics_OLED_rect(uint8_t x, uint8_t y, uint8_t w, uint8_t h);
 
-void Graphics_OLED_circle(uint8_t x, uint8_t y, uint8_t r);
 
 /*==================[end of file]============================================*/
 #endif /* GRAPHICS_OLED_H_ */

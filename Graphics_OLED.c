@@ -141,71 +141,7 @@ void Graphics_OLED_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2)
 
 /*==================[rect / circle]=======================================*/
 
-void Graphics_OLED_rect(uint8_t x, uint8_t y, uint8_t w, uint8_t h)
-{
-    int16_t i;
-    int16_t x2, y2;
-    if (w == 0 || h == 0) return;
-    x2 = (int16_t)x + w - 1;
-    y2 = (int16_t)y + h - 1;
 
-    /* top & bottom edges */
-    for (i = x; i <= x2; i++)
-        if (i >= 0 && i < GFX_OLED_WIDTH)
-        {
-            if (y  < GFX_OLED_HEIGHT)               bit_set(Graphics_OLED_framebuffer[i], y);
-            if (y2 >= 0 && y2 < GFX_OLED_HEIGHT)    bit_set(Graphics_OLED_framebuffer[i], y2);
-        }
-
-    /* left & right edges */
-    for (i = y; i <= y2; i++)
-        if (i >= 0 && i < GFX_OLED_HEIGHT)
-        {
-            if (x  < GFX_OLED_WIDTH)                bit_set(Graphics_OLED_framebuffer[x],  i);
-            if (x2 >= 0 && x2 < GFX_OLED_WIDTH)     bit_set(Graphics_OLED_framebuffer[x2], i);
-        }
-}
-
-/* Plot with bounds check (coords may go negative around the circle). */
-static void gfxPlot(int16_t x, int16_t y)
-{
-    if (x >= 0 && x < GFX_OLED_WIDTH && y >= 0 && y < GFX_OLED_HEIGHT)
-        bit_set(Graphics_OLED_framebuffer[x], y);
-}
-
-void Graphics_OLED_circle(uint8_t cx, uint8_t cy, uint8_t r)
-{
-    int16_t x = (int16_t)r;
-    int16_t y = 0;
-    int16_t err = 1 - (int16_t)r;
-
-    if (r == 0)
-    {
-        gfxPlot((int16_t)cx, (int16_t)cy);
-        return;
-    }
-
-    /* Midpoint circle algorithm — 8-way symmetry. */
-    while (x >= y)
-    {
-        gfxPlot((int16_t)cx + x, (int16_t)cy + y);
-        gfxPlot((int16_t)cx - x, (int16_t)cy + y);
-        gfxPlot((int16_t)cx + x, (int16_t)cy - y);
-        gfxPlot((int16_t)cx - x, (int16_t)cy - y);
-        gfxPlot((int16_t)cx + y, (int16_t)cy + x);
-        gfxPlot((int16_t)cx - y, (int16_t)cy + x);
-        gfxPlot((int16_t)cx + y, (int16_t)cy - x);
-        gfxPlot((int16_t)cx - y, (int16_t)cy - x);
-        y++;
-        if (err < 0)
-            err += 2 * y + 1;
-        else
-        {
-            x--;
-            err += 2 * (y - x) + 1;
-        }
-    }
-}
 
 /*==================[text]=================================================*/
 
