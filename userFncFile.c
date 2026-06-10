@@ -20,6 +20,7 @@ uint8_t miVar;
 void onReset()
 {
     counter = 0;
+    perrolLoco();
     setTime1(1000, 'A');
 }
 
