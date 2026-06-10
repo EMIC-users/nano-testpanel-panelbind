@@ -255,11 +255,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                      0x45ea               0x804           0xc06  (3078)
 .text                       0x4dee              0x16e4          0x2256  (8790)
 .dinit                      0x64d2               0x100           0x180  (384)
-.text                       0x65d2               0x254           0x37e  (894)
-.init.delay32               0x6826                0x1c            0x2a  (42)
-.text                       0x6842                0x1e            0x2d  (45)
+.text                       0x65d2               0x256           0x381  (897)
+.init.delay32               0x6828                0x1c            0x2a  (42)
+.text                       0x6844                0x1e            0x2d  (45)
 
-                 Total "program" memory used (bytes):         0x9990  (39312) 60%
+                 Total "program" memory used (bytes):         0x9993  (39315) 60%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -533,23 +533,23 @@ External Symbols in Program Memory (by address):
                   0x00669a                  _etOut1
                   0x0066aa                  _Keyboard_Nav_onPress
                   0x0066b6                  _Keyboard_Pad_onPress
-                  0x0066c2                  _perrolLoco
-                  0x006702                  _setTime1
-                  0x00671e                  _timer1_Poll
-                  0x00675c                  _PMP_init
-                  0x00676c                  _PMP_write
-                  0x006778                  _PMP_read
-                  0x00678e                  _PMP_isBusy
-                  0x00679a                  _LEDs_Led1_init
-                  0x0067a2                  _LEDs_Led1_state
-                  0x0067d2                  _initSystem
-                  0x0067e0                  _main
-                  0x006800                  _getSystemMilis
-                  0x00680a                  _callback
-                  0x00681c                  _systemTimeInit
-                  0x006826                  ___delay32
-                  0x006842                  _timer4_init
-                  0x006858                  _LEDs_Led2_init
+                  0x0066c4                  _perrolLoco
+                  0x006704                  _setTime1
+                  0x006720                  _timer1_Poll
+                  0x00675e                  _PMP_init
+                  0x00676e                  _PMP_write
+                  0x00677a                  _PMP_read
+                  0x006790                  _PMP_isBusy
+                  0x00679c                  _LEDs_Led1_init
+                  0x0067a4                  _LEDs_Led1_state
+                  0x0067d4                  _initSystem
+                  0x0067e2                  _main
+                  0x006802                  _getSystemMilis
+                  0x00680c                  _callback
+                  0x00681e                  _systemTimeInit
+                  0x006828                  ___delay32
+                  0x006844                  _timer4_init
+                  0x00685a                  _LEDs_Led2_init
 
 External Symbols in Program Memory (by name):
 
@@ -584,14 +584,14 @@ External Symbols in Program Memory (by name):
                   0x0066b6                  _Keyboard_Pad_onPress
                   0x005f5c                  _Keyboard_Pad_poll
                   0x005f4e                  _Keyboard_Pad_setMode
-                  0x00679a                  _LEDs_Led1_init
-                  0x0067a2                  _LEDs_Led1_state
-                  0x006858                  _LEDs_Led2_init
+                  0x00679c                  _LEDs_Led1_init
+                  0x0067a4                  _LEDs_Led1_state
+                  0x00685a                  _LEDs_Led2_init
                   0x00643e                  _OverflowReset_I2C2
-                  0x00675c                  _PMP_init
-                  0x00678e                  _PMP_isBusy
-                  0x006778                  _PMP_read
-                  0x00676c                  _PMP_write
+                  0x00675e                  _PMP_init
+                  0x006790                  _PMP_isBusy
+                  0x00677a                  _PMP_read
+                  0x00676e                  _PMP_write
                   0x0064be                  _Read_I2C2
                   0x005d62                  _SSD1322_OLED_clear
                   0x005cba                  _SSD1322_OLED_init
@@ -614,7 +614,7 @@ External Symbols in Program Memory (by name):
                   0x0003d4                  ___addsf3
                   0x0003d4                  ___addsf3x
                   0x003216                  ___cvt_u
-                  0x006826                  ___delay32
+                  0x006828                  ___delay32
                   0x003722                  ___divdf3
                   0x003d74                  ___divdi3
                   0x00059e                  ___divsf3
@@ -709,7 +709,7 @@ External Symbols in Program Memory (by name):
                   0x0009c4                  _atoi
                   0x000a24                  _atol
                   0x000a8c                  _atoll
-                  0x00680a                  _callback
+                  0x00680c                  _callback
                   0x0040c6                  _copysignl
                   0x0059d2                  _countI2cStreamIn
                   0x00669a                  _etOut1
@@ -718,19 +718,19 @@ External Symbols in Program Memory (by name):
                   0x00420a                  _fmodl
                   0x0059be                  _getAvailable_out_count
                   0x0059da                  _getI2cStreamIn
-                  0x006800                  _getSystemMilis
+                  0x006802                  _getSystemMilis
                   0x005b34                  _i2cCloseWriteFrame
                   0x005b76                  _i2cOpenReadFrame
                   0x005a08                  _ini_I2C_IN
                   0x005a32                  _ini_I2C_OUT
                   0x005a5c                  _ini_I2C_OUT_FM
-                  0x0067d2                  _initSystem
-                  0x0067e0                  _main
+                  0x0067d4                  _initSystem
+                  0x0067e2                  _main
                   0x00255c                  _memcpy
                   0x000af0                  _memset
                   0x006688                  _onReset
                   0x0065d2                  _pI2C
-                  0x0066c2                  _perrolLoco
+                  0x0066c4                  _perrolLoco
                   0x0065fc                  _poll_EMICBus
                   0x005adc                  _pop_I2C_IN
                   0x005b00                  _pop_I2C_OUT
@@ -742,7 +742,7 @@ External Symbols in Program Memory (by name):
                   0x00458a                  _scalbnl
                   0x0056b4                  _sendDataToStream
                   0x0059e2                  _setI2cStreamOut
-                  0x006702                  _setTime1
+                  0x006704                  _setTime1
                   0x000bb8                  _snprintf
                   0x0034a2                  _strcpy
                   0x0063a4                  _streamCloseReadFrame
@@ -770,9 +770,9 @@ External Symbols in Program Memory (by name):
                   0x000c22                  _strtod
                   0x000c1c                  _strtof
                   0x000c28                  _strtold
-                  0x00681c                  _systemTimeInit
-                  0x00671e                  _timer1_Poll
-                  0x006842                  _timer4_init
+                  0x00681e                  _systemTimeInit
+                  0x006720                  _timer1_Poll
+                  0x006844                  _timer4_init
                   0x00259a                  _tolower
                   0x0034b0                  _toupper
                   0x001fdc                  _vfprintf
@@ -2398,42 +2398,42 @@ __xc_reference_data
 .dinit            0x0064d2        0x100
  .dinit           0x0064d2        0x100 data_init
 
-.text             0x0065d2        0x254
+.text             0x0065d2        0x256
  .text            0x0065d2         0xb6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\EMICBus.o
                   0x0065d2                  _pI2C
                   0x0065ee                  _EMICBus_init
                   0x0065fc                  _poll_EMICBus
- .text            0x006688         0x7a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
+ .text            0x006688         0x7c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
                   0x006688                  _onReset
                   0x00669a                  _etOut1
                   0x0066aa                  _Keyboard_Nav_onPress
                   0x0066b6                  _Keyboard_Pad_onPress
-                  0x0066c2                  _perrolLoco
- .text            0x006702         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer_api1.o
-                  0x006702                  _setTime1
-                  0x00671e                  _timer1_Poll
- .text            0x00675c         0x3e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\pmp.o
-                  0x00675c                  _PMP_init
-                  0x00676c                  _PMP_write
-                  0x006778                  _PMP_read
-                  0x00678e                  _PMP_isBusy
- .text            0x00679a         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led1.o
-                  0x00679a                  _LEDs_Led1_init
-                  0x0067a2                  _LEDs_Led1_state
- .text            0x0067d2         0x2e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\main.o
-                  0x0067d2                  _initSystem
-                  0x0067e0                  _main
- .text            0x006800         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
-                  0x006800                  _getSystemMilis
-                  0x00680a                  _callback
-                  0x00681c                  _systemTimeInit
+                  0x0066c4                  _perrolLoco
+ .text            0x006704         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer_api1.o
+                  0x006704                  _setTime1
+                  0x006720                  _timer1_Poll
+ .text            0x00675e         0x3e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\pmp.o
+                  0x00675e                  _PMP_init
+                  0x00676e                  _PMP_write
+                  0x00677a                  _PMP_read
+                  0x006790                  _PMP_isBusy
+ .text            0x00679c         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led1.o
+                  0x00679c                  _LEDs_Led1_init
+                  0x0067a4                  _LEDs_Led1_state
+ .text            0x0067d4         0x2e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\main.o
+                  0x0067d4                  _initSystem
+                  0x0067e2                  _main
+ .text            0x006802         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
+                  0x006802                  _getSystemMilis
+                  0x00680c                  _callback
+                  0x00681e                  _systemTimeInit
 
-.init.delay32     0x006826         0x1c
- .init.delay32    0x006826         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x006826                  ___delay32
+.init.delay32     0x006828         0x1c
+ .init.delay32    0x006828         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x006828                  ___delay32
 
-.text             0x006842         0x1e
- .text            0x006842         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
-                  0x006842                  _timer4_init
- .text            0x006858          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led2.o
-                  0x006858                  _LEDs_Led2_init
+.text             0x006844         0x1e
+ .text            0x006844         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
+                  0x006844                  _timer4_init
+ .text            0x00685a          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led2.o
+                  0x00685a                  _LEDs_Led2_init

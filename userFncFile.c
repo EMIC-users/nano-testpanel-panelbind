@@ -21,6 +21,8 @@ int8_t key_nav;
 
 void onReset()
 {
+    key_pad = 0;
+    key_nav = 0;
     counter = 0;
     perrolLoco();
     setTime1(1000, 'A');
@@ -36,21 +38,19 @@ void etOut1()
 
 void Keyboard_Nav_onPress(uint8_t key)
 {
-    key_nav = (char)(key);
+    key_nav = (int8_t)(key);
 }
 
 
 void Keyboard_Pad_onPress(uint8_t key)
 {
-    key_pad = (char)(key);
+    key_pad = key;
 }
 
 
 void perrolLoco(void)
 {
     Graphics_OLED_clear();
-    Graphics_OLED_bindAt(16, 34, 0, &key_pad, 1, "%4d");
-    Graphics_OLED_bindAt(87, 33, 0, &key_nav, 1, "%4d");
     Graphics_OLED_printAt(25, 22, 0, "PAD");
     Graphics_OLED_printAt(99, 21, 0, "NAV");
 }

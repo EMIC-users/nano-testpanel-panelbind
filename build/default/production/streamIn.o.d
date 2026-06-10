@@ -1,10 +1,14 @@
-build/default/production/streamIn.o: streamIn.c inc/streamIn.h \
- inc/streamOut.h inc/streamOut.h inc/conversionFunctions.h
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\streamIn.o: \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/streamIn.c \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/conversionFunctions.h
 
-inc/streamIn.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamIn.h:
 
-inc/streamOut.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h:
 
-inc/streamOut.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h:
 
-inc/conversionFunctions.h:
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/conversionFunctions.h:
