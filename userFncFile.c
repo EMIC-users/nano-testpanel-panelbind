@@ -41,4 +41,14 @@ void PantallaPrincipal()
 }
 
 
+void testCanvas(void)
+{
+    Graphics_OLED_clear();
+    Graphics_OLED_printAt(34, 6, 1, "TITULO");
+    Graphics_OLED_line(0, 22, 127, 22);
+    Graphics_OLED_printAt(16, 40, 0, "COUNT:");
+    Graphics_OLED_bindAt(81, 41, 0, &counter, 1, "%4u");
+}
+
+
 

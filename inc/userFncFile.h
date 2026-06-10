@@ -15,6 +15,7 @@
 void onReset();
 void etOut1();
 void PantallaPrincipal();
+void testCanvas(void);
 
 #endif /* USERFNCFILE_H */
 
