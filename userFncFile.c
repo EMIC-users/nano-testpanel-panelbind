@@ -44,15 +44,15 @@ void PantallaPrincipal()
 void testCanvas(void)
 {
     Graphics_OLED_clear();
-    Graphics_OLED_printAt(33, 6, 1, "TITULO");
-    Graphics_OLED_line(0, 52, 127, 52);
-    Graphics_OLED_printAt(7, 25, 0, "COUNT:");
-    Graphics_OLED_bindAt(83, 30, 0, &counter, 1, "%05u");
-    Graphics_OLED_line(60, 20, 62, 52);
+    Graphics_OLED_printAt(43, 2, 1, "TITULO");
+    Graphics_OLED_line(0, 56, 127, 56);
+    Graphics_OLED_printAt(73, 24, 0, "COUNT:");
+    Graphics_OLED_bindAt(84, 40, 0, &counter, 1, "%05u");
+    Graphics_OLED_line(65, 14, 65, 56);
     Graphics_OLED_line(59, 39, 59, 39);
-    Graphics_OLED_printAt(9, 42, 0, "KU");
-    Graphics_OLED_printAt(97, 9, 0, "LOCO");
-    Graphics_OLED_line(68, 25, 103, 24);
+    Graphics_OLED_line(0, 14, 127, 14);
+    Graphics_OLED_circle(30, 34, 13);
+    Graphics_OLED_rect(0, 0, 127, 63);
 }
 
 
