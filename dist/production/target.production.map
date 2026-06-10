@@ -252,32 +252,32 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x43ea          0x65df  (26079)
-.const                      0x45ea               0x81a           0xc27  (3111)
-.text                       0x4e04              0x19b6          0x2691  (9873)
-.dinit                      0x67ba               0x100           0x180  (384)
-.text                       0x68ba               0x2c6           0x429  (1065)
-.init.delay32               0x6b80                0x1c            0x2a  (42)
-.text                       0x6b9c                0x1e            0x2d  (45)
+.const                      0x45ea               0x804           0xc06  (3078)
+.text                       0x4dee              0x16e4          0x2256  (8790)
+.dinit                      0x64d2               0x100           0x180  (384)
+.text                       0x65d2               0x254           0x37e  (894)
+.init.delay32               0x6826                0x1c            0x2a  (42)
+.text                       0x6842                0x1e            0x2d  (45)
 
-                 Total "program" memory used (bytes):         0x9e97  (40599) 62%
+                 Total "program" memory used (bytes):         0x9990  (39312) 60%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x2a  (42)
-.ndata                       0x82a                   0             0x4  (4)
-.nbss                        0x82e                   0             0x2  (2)
-.bss                         0x830                   0           0x880  (2176)
-.data                       0x10b0                   0            0x6e  (110)
-.bss                        0x111e                   0            0x24  (36)
-.data                       0x1142                   0            0x1e  (30)
-.bss                        0x1160                   0            0x1c  (28)
-.data                       0x117c                   0            0x20  (32)
-.bss                        0x119c                   0             0x4  (4)
+.nbss                        0x800                   0            0x2c  (44)
+.ndata                       0x82c                   0             0x4  (4)
+.nbss                        0x830                   0             0x2  (2)
+.bss                         0x832                   0           0x880  (2176)
+.data                       0x10b2                   0            0x6e  (110)
+.bss                        0x1120                   0            0x24  (36)
+.data                       0x1144                   0            0x1e  (30)
+.bss                        0x1162                   0            0x1c  (28)
+.data                       0x117e                   0            0x20  (32)
+.bss                        0x119e                   0             0x4  (4)
 
-                 Total "data" memory used (bytes):          0x9a0  (2464) 30%
+                 Total "data" memory used (bytes):          0x9a2  (2466) 30%
 
 
 Dynamic Memory Usage
@@ -285,47 +285,51 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                       0x11a0                              0x1660  (5728)
+stack                       0x11a2                              0x165e  (5726)
 
-                 Maximum dynamic memory (bytes):         0x1660  (5728)
+                 Maximum dynamic memory (bytes):         0x165e  (5726)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
 
 External Symbols in Data Memory (by address):
 
-                    0x0820                  _i2crfi_estado
-                    0x0821                  _i2crfi_estado_rcv
-                    0x0822                  _i2crfi_indice
-                    0x0823                  _stopflag
-                    0x0824                  _counter
-                    0x0826                  _miVar
-                    0x082c                  _I2C_ID
-                    0x0830                  _Graphics_OLED_framebuffer
-                    0x10b0                  _i2c2InStream
-                    0x10cc                  _i2c2OutStream
-                    0x119c                  ___errno_val
+                    0x081c                  _counter
+                    0x081e                  _miVar
+                    0x081f                  _key_pad
+                    0x0820                  _key_nav
+                    0x0826                  _i2crfi_estado
+                    0x0827                  _i2crfi_estado_rcv
+                    0x0828                  _i2crfi_indice
+                    0x0829                  _stopflag
+                    0x082e                  _I2C_ID
+                    0x0832                  _Graphics_OLED_framebuffer
+                    0x10b2                  _i2c2InStream
+                    0x10ce                  _i2c2OutStream
+                    0x119e                  ___errno_val
 
 External Symbols in Data Memory (by name):
 
-                    0x0830                  _Graphics_OLED_framebuffer
-                    0x082c                  _I2C_ID
-                    0x119c                  ___errno_val
-                    0x0824                  _counter
-                    0x10b0                  _i2c2InStream
-                    0x10cc                  _i2c2OutStream
-                    0x0820                  _i2crfi_estado
-                    0x0821                  _i2crfi_estado_rcv
-                    0x0822                  _i2crfi_indice
-                    0x0826                  _miVar
-                    0x0823                  _stopflag
+                    0x0832                  _Graphics_OLED_framebuffer
+                    0x082e                  _I2C_ID
+                    0x119e                  ___errno_val
+                    0x081c                  _counter
+                    0x10b2                  _i2c2InStream
+                    0x10ce                  _i2c2OutStream
+                    0x0826                  _i2crfi_estado
+                    0x0827                  _i2crfi_estado_rcv
+                    0x0828                  _i2crfi_indice
+                    0x0820                  _key_nav
+                    0x081f                  _key_pad
+                    0x081e                  _miVar
+                    0x0829                  _stopflag
 
 External Symbols in Program Memory (by address):
 
                   0x000200                  __resetPRI
                   0x00023c                  __psv_init
-                  0x000252                  __data_init_standard
                   0x000252                  __data_init
+                  0x000252                  __data_init_standard
                   0x0002e4                  __T4Interrupt
                   0x00030c                  __SI2C2Interrupt
                   0x000332                  __MI2C2Interrupt
@@ -333,12 +337,12 @@ External Symbols in Program Memory (by address):
                   0x00035e                  ___fixunssfsi
                   0x000394                  ___floatunsisf
                   0x000398                  __funpack
-                  0x0003c2                  ___subsf3x
                   0x0003c2                  ___subsf3
+                  0x0003c2                  ___subsf3x
                   0x0003d4                  ___addsf3
                   0x0003d4                  ___addsf3x
-                  0x00059e                  ___divsf3x
                   0x00059e                  ___divsf3
+                  0x00059e                  ___divsf3x
                   0x000730                  __sdivf
                   0x00075c                  __dnrmpackf
                   0x0007b0                  __typef
@@ -387,11 +391,11 @@ External Symbols in Program Memory (by address):
                   0x0034bc                  ___toupper_l
                   0x0034c2                  ___stdio_exit
                   0x0034d6                  ___stpcpy
-                  0x003516                  ___ledf2
-                  0x003516                  ___eqdf2
                   0x003516                  ___ltdf2
-                  0x003520                  ___gedf2
+                  0x003516                  ___eqdf2
+                  0x003516                  ___ledf2
                   0x003520                  ___gtdf2
+                  0x003520                  ___gedf2
                   0x00352a                  ___divsi3
                   0x003548                  ___nedf2
                   0x003552                  ___extendsfdf2
@@ -403,8 +407,8 @@ External Symbols in Program Memory (by address):
                   0x00364e                  ___udivsi3
                   0x00366e                  ___umodsi3
                   0x003674                  ___mulp32eds3
-                  0x003674                  ___mulp32peds3
                   0x003674                  ___mulsi3
+                  0x003674                  ___mulp32peds3
                   0x003680                  ___subdf3
                   0x00368c                  ___adddf3
                   0x003722                  ___divdf3
@@ -443,168 +447,165 @@ External Symbols in Program Memory (by address):
                   0x004536                  _scalbnf
                   0x00458a                  _scalbnl
                   0x004dca                  _streamOut_Graphic_OLED
-                  0x004dfc                  _streamIn_I2C
-                  0x004e00                  _streamOut_I2C
-                  0x004e2e                  _Graphics_OLED_init
-                  0x004e68                  _Graphics_OLED_poll
-                  0x004fa8                  _Graphics_OLED_clear
-                  0x004fd0                  _Graphics_OLED_pixel
-                  0x00507e                  _Graphics_OLED_line
-                  0x0051a2                  _Graphics_OLED_rect
-                  0x00539a                  _Graphics_OLED_circle
-                  0x0054a4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
-                  0x0054ac                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
-                  0x005656                  _Graphics_OLED_print
-                  0x00566a                  _Graphics_OLED_printAt
-                  0x005694                  _Graphics_OLED_bindAt
-                  0x00570a                  _streamIn_t_ptr_to_float
-                  0x005746                  _streamIn_t_ptr_to_char
-                  0x005780                  _streamIn_t_ptr_to_uint8_t
-                  0x0057be                  _streamIn_t_ptr_to_uint16_t
-                  0x0057fa                  _streamIn_t_ptr_to_uint32_t
-                  0x005836                  _streamIn_t_ptr_to_uint64
-                  0x005872                  _streamIn_t_ptr_to_int8_t
-                  0x0058b0                  _streamIn_t_ptr_to_int16_t
-                  0x0058ec                  _streamIn_t_ptr_to_int32_t
-                  0x005928                  _streamIn_t_ptr_to_int64_t
-                  0x005964                  _streamIn_t_ptr_to_ascii
-                  0x0059a4                  _sendDataToStream
-                  0x005ca2                  _Init_I2C_Driver
-                  0x005cae                  _getAvailable_out_count
-                  0x005cc2                  _countI2cStreamIn
-                  0x005cca                  _getI2cStreamIn
-                  0x005cd2                  _setI2cStreamOut
-                  0x005cde                  _I2C_Begin_Transmision
-                  0x005cf8                  _ini_I2C_IN
-                  0x005d22                  _ini_I2C_OUT
-                  0x005d4c                  _ini_I2C_OUT_FM
-                  0x005d56                  _reset_I2C_FRAME
-                  0x005d64                  _push_I2C_IN
-                  0x005d9c                  _push_I2C_OUT
-                  0x005dcc                  _pop_I2C_IN
-                  0x005df0                  _pop_I2C_OUT
-                  0x005e14                  _pop_I2C_OUT_FM
-                  0x005e24                  _i2cCloseWriteFrame
-                  0x005e66                  _i2cOpenReadFrame
-                  0x005eb2                  _I2c_driver_callback_slave
-                  0x005ef2                  _I2c_driver_callback_master
-                  0x005f62                  _SSD1322_OLED_sendCommand
-                  0x005f72                  _SSD1322_OLED_sendData
-                  0x005f7e                  _SSD1322_OLED_setColumn
-                  0x005f94                  _SSD1322_OLED_setRow
-                  0x005faa                  _SSD1322_OLED_init
-                  0x006052                  _SSD1322_OLED_clear
-                  0x006080                  _SSD1322_OLED_refresh
-                  0x00613a                  _SSD1322_OLED_setContrast
-                  0x00614a                  _SSD1322_OLED_powerOn
-                  0x006156                  _SSD1322_OLED_powerOff
-                  0x0061f6                  _Keyboard_Pad_init
-                  0x00623e                  _Keyboard_Pad_setMode
-                  0x00624c                  _Keyboard_Pad_poll
-                  0x0063d8                  _Keyboard_Nav_init
-                  0x006420                  _Keyboard_Nav_setMode
-                  0x00642e                  _Keyboard_Nav_poll
-                  0x006526                  _streamPushCtr
-                  0x006574                  _streamPush
-                  0x0065ae                  _streamPop
-                  0x0065e6                  _streamOpenWriteFrame
-                  0x006628                  _streamOpenReadFrame
-                  0x006674                  _streamReOpenReadFrame
-                  0x00668c                  _streamCloseReadFrame
-                  0x0066b6                  _Init_Master_I2C2
-                  0x00671e                  _CollisionReset_I2C2
-                  0x006726                  _OverflowReset_I2C2
-                  0x00672e                  _IsStartI2c2
-                  0x00673a                  _IsCollisionDetectI2c2
-                  0x006746                  _IsStopI2c2
-                  0x006752                  _IsReceiveBufferFullI2c2
-                  0x00675e                  _IsDataOrAddressI2c2
-                  0x00676a                  _IsReceiveOverflowI2c2
-                  0x006776                  _Start_I2C2
-                  0x006788                  _Stop_I2C2
-                  0x00679a                  _Write_I2C2
-                  0x0067a6                  _Read_I2C2
-                  0x0068ba                  _onReset
-                  0x0068cc                  _etOut1
-                  0x0068dc                  _perrolLoco
-                  0x006908                  _PantallaPrincipal
-                  0x006944                  _testCanvas
-                  0x0069a6                  _pI2C
-                  0x0069c2                  _EMICBus_init
-                  0x0069d0                  _poll_EMICBus
-                  0x006a5c                  _setTime1
-                  0x006a78                  _timer1_Poll
-                  0x006ab6                  _PMP_init
-                  0x006ac6                  _PMP_write
-                  0x006ad2                  _PMP_read
-                  0x006ae8                  _PMP_isBusy
-                  0x006af4                  _LEDs_Led1_init
-                  0x006afc                  _LEDs_Led1_state
-                  0x006b2c                  _initSystem
-                  0x006b3a                  _main
-                  0x006b5a                  _getSystemMilis
-                  0x006b64                  _callback
-                  0x006b76                  _systemTimeInit
-                  0x006b80                  ___delay32
-                  0x006b9c                  _timer4_init
-                  0x006bb2                  _LEDs_Led2_init
+                  0x004de6                  _streamIn_I2C
+                  0x004dea                  _streamOut_I2C
+                  0x004e18                  _Graphics_OLED_init
+                  0x004e52                  _Graphics_OLED_poll
+                  0x004f92                  _Graphics_OLED_clear
+                  0x004fba                  _Graphics_OLED_pixel
+                  0x005068                  _Graphics_OLED_line
+                  0x0051b4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
+                  0x0051bc                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
+                  0x005366                  _Graphics_OLED_print
+                  0x00537a                  _Graphics_OLED_printAt
+                  0x0053a4                  _Graphics_OLED_bindAt
+                  0x00541a                  _streamIn_t_ptr_to_float
+                  0x005456                  _streamIn_t_ptr_to_char
+                  0x005490                  _streamIn_t_ptr_to_uint8_t
+                  0x0054ce                  _streamIn_t_ptr_to_uint16_t
+                  0x00550a                  _streamIn_t_ptr_to_uint32_t
+                  0x005546                  _streamIn_t_ptr_to_uint64
+                  0x005582                  _streamIn_t_ptr_to_int8_t
+                  0x0055c0                  _streamIn_t_ptr_to_int16_t
+                  0x0055fc                  _streamIn_t_ptr_to_int32_t
+                  0x005638                  _streamIn_t_ptr_to_int64_t
+                  0x005674                  _streamIn_t_ptr_to_ascii
+                  0x0056b4                  _sendDataToStream
+                  0x0059b2                  _Init_I2C_Driver
+                  0x0059be                  _getAvailable_out_count
+                  0x0059d2                  _countI2cStreamIn
+                  0x0059da                  _getI2cStreamIn
+                  0x0059e2                  _setI2cStreamOut
+                  0x0059ee                  _I2C_Begin_Transmision
+                  0x005a08                  _ini_I2C_IN
+                  0x005a32                  _ini_I2C_OUT
+                  0x005a5c                  _ini_I2C_OUT_FM
+                  0x005a66                  _reset_I2C_FRAME
+                  0x005a74                  _push_I2C_IN
+                  0x005aac                  _push_I2C_OUT
+                  0x005adc                  _pop_I2C_IN
+                  0x005b00                  _pop_I2C_OUT
+                  0x005b24                  _pop_I2C_OUT_FM
+                  0x005b34                  _i2cCloseWriteFrame
+                  0x005b76                  _i2cOpenReadFrame
+                  0x005bc2                  _I2c_driver_callback_slave
+                  0x005c02                  _I2c_driver_callback_master
+                  0x005c72                  _SSD1322_OLED_sendCommand
+                  0x005c82                  _SSD1322_OLED_sendData
+                  0x005c8e                  _SSD1322_OLED_setColumn
+                  0x005ca4                  _SSD1322_OLED_setRow
+                  0x005cba                  _SSD1322_OLED_init
+                  0x005d62                  _SSD1322_OLED_clear
+                  0x005d90                  _SSD1322_OLED_refresh
+                  0x005e4a                  _SSD1322_OLED_setContrast
+                  0x005e5a                  _SSD1322_OLED_powerOn
+                  0x005e66                  _SSD1322_OLED_powerOff
+                  0x005f06                  _Keyboard_Pad_init
+                  0x005f4e                  _Keyboard_Pad_setMode
+                  0x005f5c                  _Keyboard_Pad_poll
+                  0x0060ec                  _Keyboard_Nav_init
+                  0x006134                  _Keyboard_Nav_setMode
+                  0x006142                  _Keyboard_Nav_poll
+                  0x00623e                  _streamPushCtr
+                  0x00628c                  _streamPush
+                  0x0062c6                  _streamPop
+                  0x0062fe                  _streamOpenWriteFrame
+                  0x006340                  _streamOpenReadFrame
+                  0x00638c                  _streamReOpenReadFrame
+                  0x0063a4                  _streamCloseReadFrame
+                  0x0063ce                  _Init_Master_I2C2
+                  0x006436                  _CollisionReset_I2C2
+                  0x00643e                  _OverflowReset_I2C2
+                  0x006446                  _IsStartI2c2
+                  0x006452                  _IsCollisionDetectI2c2
+                  0x00645e                  _IsStopI2c2
+                  0x00646a                  _IsReceiveBufferFullI2c2
+                  0x006476                  _IsDataOrAddressI2c2
+                  0x006482                  _IsReceiveOverflowI2c2
+                  0x00648e                  _Start_I2C2
+                  0x0064a0                  _Stop_I2C2
+                  0x0064b2                  _Write_I2C2
+                  0x0064be                  _Read_I2C2
+                  0x0065d2                  _pI2C
+                  0x0065ee                  _EMICBus_init
+                  0x0065fc                  _poll_EMICBus
+                  0x006688                  _onReset
+                  0x00669a                  _etOut1
+                  0x0066aa                  _Keyboard_Nav_onPress
+                  0x0066b6                  _Keyboard_Pad_onPress
+                  0x0066c2                  _perrolLoco
+                  0x006702                  _setTime1
+                  0x00671e                  _timer1_Poll
+                  0x00675c                  _PMP_init
+                  0x00676c                  _PMP_write
+                  0x006778                  _PMP_read
+                  0x00678e                  _PMP_isBusy
+                  0x00679a                  _LEDs_Led1_init
+                  0x0067a2                  _LEDs_Led1_state
+                  0x0067d2                  _initSystem
+                  0x0067e0                  _main
+                  0x006800                  _getSystemMilis
+                  0x00680a                  _callback
+                  0x00681c                  _systemTimeInit
+                  0x006826                  ___delay32
+                  0x006842                  _timer4_init
+                  0x006858                  _LEDs_Led2_init
 
 External Symbols in Program Memory (by name):
 
-                  0x0054ac                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
-                  0x0054a4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
-                  0x00671e                  _CollisionReset_I2C2
-                  0x0069c2                  _EMICBus_init
-                  0x005694                  _Graphics_OLED_bindAt
-                  0x00539a                  _Graphics_OLED_circle
-                  0x004fa8                  _Graphics_OLED_clear
-                  0x004e2e                  _Graphics_OLED_init
-                  0x00507e                  _Graphics_OLED_line
-                  0x004fd0                  _Graphics_OLED_pixel
-                  0x004e68                  _Graphics_OLED_poll
-                  0x005656                  _Graphics_OLED_print
-                  0x00566a                  _Graphics_OLED_printAt
-                  0x0051a2                  _Graphics_OLED_rect
-                  0x005cde                  _I2C_Begin_Transmision
-                  0x005ef2                  _I2c_driver_callback_master
-                  0x005eb2                  _I2c_driver_callback_slave
-                  0x005ca2                  _Init_I2C_Driver
-                  0x0066b6                  _Init_Master_I2C2
-                  0x00673a                  _IsCollisionDetectI2c2
-                  0x00675e                  _IsDataOrAddressI2c2
-                  0x006752                  _IsReceiveBufferFullI2c2
-                  0x00676a                  _IsReceiveOverflowI2c2
-                  0x00672e                  _IsStartI2c2
-                  0x006746                  _IsStopI2c2
-                  0x0063d8                  _Keyboard_Nav_init
-                  0x00642e                  _Keyboard_Nav_poll
-                  0x006420                  _Keyboard_Nav_setMode
-                  0x0061f6                  _Keyboard_Pad_init
-                  0x00624c                  _Keyboard_Pad_poll
-                  0x00623e                  _Keyboard_Pad_setMode
-                  0x006af4                  _LEDs_Led1_init
-                  0x006afc                  _LEDs_Led1_state
-                  0x006bb2                  _LEDs_Led2_init
-                  0x006726                  _OverflowReset_I2C2
-                  0x006ab6                  _PMP_init
-                  0x006ae8                  _PMP_isBusy
-                  0x006ad2                  _PMP_read
-                  0x006ac6                  _PMP_write
-                  0x006908                  _PantallaPrincipal
-                  0x0067a6                  _Read_I2C2
-                  0x006052                  _SSD1322_OLED_clear
-                  0x005faa                  _SSD1322_OLED_init
-                  0x006156                  _SSD1322_OLED_powerOff
-                  0x00614a                  _SSD1322_OLED_powerOn
-                  0x006080                  _SSD1322_OLED_refresh
-                  0x005f62                  _SSD1322_OLED_sendCommand
-                  0x005f72                  _SSD1322_OLED_sendData
-                  0x005f7e                  _SSD1322_OLED_setColumn
-                  0x00613a                  _SSD1322_OLED_setContrast
-                  0x005f94                  _SSD1322_OLED_setRow
-                  0x006776                  _Start_I2C2
-                  0x006788                  _Stop_I2C2
-                  0x00679a                  _Write_I2C2
+                  0x0051bc                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
+                  0x0051b4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
+                  0x006436                  _CollisionReset_I2C2
+                  0x0065ee                  _EMICBus_init
+                  0x0053a4                  _Graphics_OLED_bindAt
+                  0x004f92                  _Graphics_OLED_clear
+                  0x004e18                  _Graphics_OLED_init
+                  0x005068                  _Graphics_OLED_line
+                  0x004fba                  _Graphics_OLED_pixel
+                  0x004e52                  _Graphics_OLED_poll
+                  0x005366                  _Graphics_OLED_print
+                  0x00537a                  _Graphics_OLED_printAt
+                  0x0059ee                  _I2C_Begin_Transmision
+                  0x005c02                  _I2c_driver_callback_master
+                  0x005bc2                  _I2c_driver_callback_slave
+                  0x0059b2                  _Init_I2C_Driver
+                  0x0063ce                  _Init_Master_I2C2
+                  0x006452                  _IsCollisionDetectI2c2
+                  0x006476                  _IsDataOrAddressI2c2
+                  0x00646a                  _IsReceiveBufferFullI2c2
+                  0x006482                  _IsReceiveOverflowI2c2
+                  0x006446                  _IsStartI2c2
+                  0x00645e                  _IsStopI2c2
+                  0x0060ec                  _Keyboard_Nav_init
+                  0x0066aa                  _Keyboard_Nav_onPress
+                  0x006142                  _Keyboard_Nav_poll
+                  0x006134                  _Keyboard_Nav_setMode
+                  0x005f06                  _Keyboard_Pad_init
+                  0x0066b6                  _Keyboard_Pad_onPress
+                  0x005f5c                  _Keyboard_Pad_poll
+                  0x005f4e                  _Keyboard_Pad_setMode
+                  0x00679a                  _LEDs_Led1_init
+                  0x0067a2                  _LEDs_Led1_state
+                  0x006858                  _LEDs_Led2_init
+                  0x00643e                  _OverflowReset_I2C2
+                  0x00675c                  _PMP_init
+                  0x00678e                  _PMP_isBusy
+                  0x006778                  _PMP_read
+                  0x00676c                  _PMP_write
+                  0x0064be                  _Read_I2C2
+                  0x005d62                  _SSD1322_OLED_clear
+                  0x005cba                  _SSD1322_OLED_init
+                  0x005e66                  _SSD1322_OLED_powerOff
+                  0x005e5a                  _SSD1322_OLED_powerOn
+                  0x005d90                  _SSD1322_OLED_refresh
+                  0x005c72                  _SSD1322_OLED_sendCommand
+                  0x005c82                  _SSD1322_OLED_sendData
+                  0x005c8e                  _SSD1322_OLED_setColumn
+                  0x005e4a                  _SSD1322_OLED_setContrast
+                  0x005ca4                  _SSD1322_OLED_setRow
+                  0x00648e                  _Start_I2C2
+                  0x0064a0                  _Stop_I2C2
+                  0x0064b2                  _Write_I2C2
                   0x000358                  __DefaultInterrupt
                   0x000332                  __MI2C2Interrupt
                   0x00030c                  __SI2C2Interrupt
@@ -613,7 +614,7 @@ External Symbols in Program Memory (by name):
                   0x0003d4                  ___addsf3
                   0x0003d4                  ___addsf3x
                   0x003216                  ___cvt_u
-                  0x006b80                  ___delay32
+                  0x006826                  ___delay32
                   0x003722                  ___divdf3
                   0x003d74                  ___divdi3
                   0x00059e                  ___divsf3
@@ -708,71 +709,70 @@ External Symbols in Program Memory (by name):
                   0x0009c4                  _atoi
                   0x000a24                  _atol
                   0x000a8c                  _atoll
-                  0x006b64                  _callback
+                  0x00680a                  _callback
                   0x0040c6                  _copysignl
-                  0x005cc2                  _countI2cStreamIn
-                  0x0068cc                  _etOut1
+                  0x0059d2                  _countI2cStreamIn
+                  0x00669a                  _etOut1
                   0x0040fa                  _fabsl
                   0x004110                  _floorl
                   0x00420a                  _fmodl
-                  0x005cae                  _getAvailable_out_count
-                  0x005cca                  _getI2cStreamIn
-                  0x006b5a                  _getSystemMilis
-                  0x005e24                  _i2cCloseWriteFrame
-                  0x005e66                  _i2cOpenReadFrame
-                  0x005cf8                  _ini_I2C_IN
-                  0x005d22                  _ini_I2C_OUT
-                  0x005d4c                  _ini_I2C_OUT_FM
-                  0x006b2c                  _initSystem
-                  0x006b3a                  _main
+                  0x0059be                  _getAvailable_out_count
+                  0x0059da                  _getI2cStreamIn
+                  0x006800                  _getSystemMilis
+                  0x005b34                  _i2cCloseWriteFrame
+                  0x005b76                  _i2cOpenReadFrame
+                  0x005a08                  _ini_I2C_IN
+                  0x005a32                  _ini_I2C_OUT
+                  0x005a5c                  _ini_I2C_OUT_FM
+                  0x0067d2                  _initSystem
+                  0x0067e0                  _main
                   0x00255c                  _memcpy
                   0x000af0                  _memset
-                  0x0068ba                  _onReset
-                  0x0069a6                  _pI2C
-                  0x0068dc                  _perrolLoco
-                  0x0069d0                  _poll_EMICBus
-                  0x005dcc                  _pop_I2C_IN
-                  0x005df0                  _pop_I2C_OUT
-                  0x005e14                  _pop_I2C_OUT_FM
-                  0x005d64                  _push_I2C_IN
-                  0x005d9c                  _push_I2C_OUT
-                  0x005d56                  _reset_I2C_FRAME
+                  0x006688                  _onReset
+                  0x0065d2                  _pI2C
+                  0x0066c2                  _perrolLoco
+                  0x0065fc                  _poll_EMICBus
+                  0x005adc                  _pop_I2C_IN
+                  0x005b00                  _pop_I2C_OUT
+                  0x005b24                  _pop_I2C_OUT_FM
+                  0x005a74                  _push_I2C_IN
+                  0x005aac                  _push_I2C_OUT
+                  0x005a66                  _reset_I2C_FRAME
                   0x004536                  _scalbnf
                   0x00458a                  _scalbnl
-                  0x0059a4                  _sendDataToStream
-                  0x005cd2                  _setI2cStreamOut
-                  0x006a5c                  _setTime1
+                  0x0056b4                  _sendDataToStream
+                  0x0059e2                  _setI2cStreamOut
+                  0x006702                  _setTime1
                   0x000bb8                  _snprintf
                   0x0034a2                  _strcpy
-                  0x00668c                  _streamCloseReadFrame
-                  0x004dfc                  _streamIn_I2C
-                  0x005964                  _streamIn_t_ptr_to_ascii
-                  0x005746                  _streamIn_t_ptr_to_char
-                  0x00570a                  _streamIn_t_ptr_to_float
-                  0x0058b0                  _streamIn_t_ptr_to_int16_t
-                  0x0058ec                  _streamIn_t_ptr_to_int32_t
-                  0x005928                  _streamIn_t_ptr_to_int64_t
-                  0x005872                  _streamIn_t_ptr_to_int8_t
-                  0x0057be                  _streamIn_t_ptr_to_uint16_t
-                  0x0057fa                  _streamIn_t_ptr_to_uint32_t
-                  0x005836                  _streamIn_t_ptr_to_uint64
-                  0x005780                  _streamIn_t_ptr_to_uint8_t
-                  0x006628                  _streamOpenReadFrame
-                  0x0065e6                  _streamOpenWriteFrame
+                  0x0063a4                  _streamCloseReadFrame
+                  0x004de6                  _streamIn_I2C
+                  0x005674                  _streamIn_t_ptr_to_ascii
+                  0x005456                  _streamIn_t_ptr_to_char
+                  0x00541a                  _streamIn_t_ptr_to_float
+                  0x0055c0                  _streamIn_t_ptr_to_int16_t
+                  0x0055fc                  _streamIn_t_ptr_to_int32_t
+                  0x005638                  _streamIn_t_ptr_to_int64_t
+                  0x005582                  _streamIn_t_ptr_to_int8_t
+                  0x0054ce                  _streamIn_t_ptr_to_uint16_t
+                  0x00550a                  _streamIn_t_ptr_to_uint32_t
+                  0x005546                  _streamIn_t_ptr_to_uint64
+                  0x005490                  _streamIn_t_ptr_to_uint8_t
+                  0x006340                  _streamOpenReadFrame
+                  0x0062fe                  _streamOpenWriteFrame
                   0x004dca                  _streamOut_Graphic_OLED
-                  0x004e00                  _streamOut_I2C
-                  0x0065ae                  _streamPop
-                  0x006574                  _streamPush
-                  0x006526                  _streamPushCtr
-                  0x006674                  _streamReOpenReadFrame
+                  0x004dea                  _streamOut_I2C
+                  0x0062c6                  _streamPop
+                  0x00628c                  _streamPush
+                  0x00623e                  _streamPushCtr
+                  0x00638c                  _streamReOpenReadFrame
                   0x00256a                  _strlen
                   0x000c22                  _strtod
                   0x000c1c                  _strtof
                   0x000c28                  _strtold
-                  0x006b76                  _systemTimeInit
-                  0x006944                  _testCanvas
-                  0x006a78                  _timer1_Poll
-                  0x006b9c                  _timer4_init
+                  0x00681c                  _systemTimeInit
+                  0x00671e                  _timer1_Poll
+                  0x006842                  _timer4_init
                   0x00259a                  _tolower
                   0x0034b0                  _toupper
                   0x001fdc                  _vfprintf
@@ -2219,62 +2219,64 @@ __c30_signature
 
 __xc_reference_data
 
-.nbss               0x0800         0x2a
+.nbss               0x0800         0x2c
  .nbss              0x0800          0xa C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer_api1.o
  .nbss              0x080a          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
  .nbss              0x0810          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Pad.o
  .nbss              0x0816          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Nav.o
- .nbss              0x081c          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
- .nbss              0x0820          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
-                    0x0820                  _i2crfi_estado
-                    0x0821                  _i2crfi_estado_rcv
-                    0x0822                  _i2crfi_indice
-                    0x0823                  _stopflag
- .nbss              0x0824          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
-                    0x0824                  _counter
-                    0x0826                  _miVar
- .nbss              0x0828          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
+ .nbss              0x081c          0x6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
+                    0x081c                  _counter
+                    0x081e                  _miVar
+                    0x081f                  _key_pad
+                    0x0820                  _key_nav
+ .nbss              0x0822          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
+ .nbss              0x0826          0x4 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+                    0x0826                  _i2crfi_estado
+                    0x0827                  _i2crfi_estado_rcv
+                    0x0828                  _i2crfi_indice
+                    0x0829                  _stopflag
+ .nbss              0x082a          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
 
-.ndata              0x082a          0x4
- .ndata             0x082a          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
- .ndata             0x082c          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
-                    0x082c                  _I2C_ID
+.ndata              0x082c          0x4
+ .ndata             0x082c          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
+ .ndata             0x082e          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+                    0x082e                  _I2C_ID
 
-.nbss               0x082e          0x2
- .nbss              0x082e          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(errno.XX_o)
-                    0x082e                  _errno
+.nbss               0x0830          0x2
+ .nbss              0x0830          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(errno.XX_o)
+                    0x0830                  _errno
 
-.bss                0x0830        0x880
- .bss               0x0830        0x440 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
-                    0x0830                  _Graphics_OLED_framebuffer
- .bss               0x0c70        0x440 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+.bss                0x0832        0x880
+ .bss               0x0832        0x440 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
+                    0x0832                  _Graphics_OLED_framebuffer
+ .bss               0x0c72        0x440 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
 
-.data               0x10b0         0x6e
- .data              0x10b0         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
-                    0x10b0                  _i2c2InStream
-                    0x10cc                  _i2c2OutStream
- .data              0x10e8         0x36 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
+.data               0x10b2         0x6e
+ .data              0x10b2         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+                    0x10b2                  _i2c2InStream
+                    0x10ce                  _i2c2OutStream
+ .data              0x10ea         0x36 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(floatscan.XX_o)
 
-.bss                0x111e         0x24
- .bss               0x111e         0x24 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Pad.o
+.bss                0x1120         0x24
+ .bss               0x1120         0x24 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Pad.o
 
-.data               0x1142         0x1e
- .data              0x1142         0x1e c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
+.data               0x1144         0x1e
+ .data              0x1144         0x1e c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__printf_core.XX_o)
 
-.bss                0x1160         0x1c
- .bss               0x1160         0x1c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Nav.o
+.bss                0x1162         0x1c
+ .bss               0x1162         0x1c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Nav.o
 
-.data               0x117c         0x20
- .data              0x117c         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
- .data              0x118c         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
+.data               0x117e         0x20
+ .data              0x117e         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_a.XX_o)
+ .data              0x118e         0x10 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__fmt_fp.XX_o)
 
-.bss                0x119c          0x4
- .bss               0x119c          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
-                    0x119c                  ___errno_val
- .bss               0x119e          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
-                    0x119e                  ___stdin_used
-                    0x119e                  ___stdout_used
-                    0x119e                  ___stderr_used
+.bss                0x119e          0x4
+ .bss               0x119e          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
+                    0x119e                  ___errno_val
+ .bss               0x11a0          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__stdio_exit.XX_o)
+                    0x11a0                  ___stdin_used
+                    0x11a0                  ___stdout_used
+                    0x11a0                  ___stderr_used
 
 .ivt._T4Interrupt
                   0x00004a          0x2
@@ -2298,142 +2300,140 @@ __xc_reference_data
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\main.o
 
-.const              0xc5ea        0x81a load address 0x0045ea  
+.const              0xc5ea        0x804 load address 0x0045ea  
  .const             0xc5ea        0x7f0 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
                     0xcdca                  _streamOut_Graphic_OLED
- .const             0xcdda         0x22 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
- .const             0xcdfc          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
-                    0xcdfc                  _streamIn_I2C
-                    0xce00                  _streamOut_I2C
+ .const             0xcdda          0xc C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
+ .const             0xcde6          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+                    0xcde6                  _streamIn_I2C
+                    0xcdea                  _streamOut_I2C
 
-.text             0x004e04       0x19b6
- .text            0x004e04        0x906 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
-                  0x004e2e                  _Graphics_OLED_init
-                  0x004e68                  _Graphics_OLED_poll
-                  0x004fa8                  _Graphics_OLED_clear
-                  0x004fd0                  _Graphics_OLED_pixel
-                  0x00507e                  _Graphics_OLED_line
-                  0x0051a2                  _Graphics_OLED_rect
-                  0x00539a                  _Graphics_OLED_circle
-                  0x0054a4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
-                  0x0054ac                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
-                  0x005656                  _Graphics_OLED_print
-                  0x00566a                  _Graphics_OLED_printAt
-                  0x005694                  _Graphics_OLED_bindAt
- .text            0x00570a        0x598 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\streamIn.o
-                  0x00570a                  _streamIn_t_ptr_to_float
-                  0x005746                  _streamIn_t_ptr_to_char
-                  0x005780                  _streamIn_t_ptr_to_uint8_t
-                  0x0057be                  _streamIn_t_ptr_to_uint16_t
-                  0x0057fa                  _streamIn_t_ptr_to_uint32_t
-                  0x005836                  _streamIn_t_ptr_to_uint64
-                  0x005872                  _streamIn_t_ptr_to_int8_t
-                  0x0058b0                  _streamIn_t_ptr_to_int16_t
-                  0x0058ec                  _streamIn_t_ptr_to_int32_t
-                  0x005928                  _streamIn_t_ptr_to_int64_t
-                  0x005964                  _streamIn_t_ptr_to_ascii
-                  0x0059a4                  _sendDataToStream
- .text            0x005ca2        0x2c0 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
-                  0x005ca2                  _Init_I2C_Driver
-                  0x005cae                  _getAvailable_out_count
-                  0x005cc2                  _countI2cStreamIn
-                  0x005cca                  _getI2cStreamIn
-                  0x005cd2                  _setI2cStreamOut
-                  0x005cde                  _I2C_Begin_Transmision
-                  0x005cf8                  _ini_I2C_IN
-                  0x005d22                  _ini_I2C_OUT
-                  0x005d4c                  _ini_I2C_OUT_FM
-                  0x005d56                  _reset_I2C_FRAME
-                  0x005d64                  _push_I2C_IN
-                  0x005d9c                  _push_I2C_OUT
-                  0x005dcc                  _pop_I2C_IN
-                  0x005df0                  _pop_I2C_OUT
-                  0x005e14                  _pop_I2C_OUT_FM
-                  0x005e24                  _i2cCloseWriteFrame
-                  0x005e66                  _i2cOpenReadFrame
-                  0x005eb2                  _I2c_driver_callback_slave
-                  0x005ef2                  _I2c_driver_callback_master
- .text            0x005f62        0x200 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\SSD1322_OLED.o
-                  0x005f62                  _SSD1322_OLED_sendCommand
-                  0x005f72                  _SSD1322_OLED_sendData
-                  0x005f7e                  _SSD1322_OLED_setColumn
-                  0x005f94                  _SSD1322_OLED_setRow
-                  0x005faa                  _SSD1322_OLED_init
-                  0x006052                  _SSD1322_OLED_clear
-                  0x006080                  _SSD1322_OLED_refresh
-                  0x00613a                  _SSD1322_OLED_setContrast
-                  0x00614a                  _SSD1322_OLED_powerOn
-                  0x006156                  _SSD1322_OLED_powerOff
- .text            0x006162        0x1e2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Pad.o
-                  0x0061f6                  _Keyboard_Pad_init
-                  0x00623e                  _Keyboard_Pad_setMode
-                  0x00624c                  _Keyboard_Pad_poll
- .text            0x006344        0x1e2 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Nav.o
-                  0x0063d8                  _Keyboard_Nav_init
-                  0x006420                  _Keyboard_Nav_setMode
-                  0x00642e                  _Keyboard_Nav_poll
- .text            0x006526        0x190 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\stream.o
-                  0x006526                  _streamPushCtr
-                  0x006574                  _streamPush
-                  0x0065ae                  _streamPop
-                  0x0065e6                  _streamOpenWriteFrame
-                  0x006628                  _streamOpenReadFrame
-                  0x006674                  _streamReOpenReadFrame
-                  0x00668c                  _streamCloseReadFrame
- .text            0x0066b6        0x104 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2.o
-                  0x0066b6                  _Init_Master_I2C2
-                  0x00671e                  _CollisionReset_I2C2
-                  0x006726                  _OverflowReset_I2C2
-                  0x00672e                  _IsStartI2c2
-                  0x00673a                  _IsCollisionDetectI2c2
-                  0x006746                  _IsStopI2c2
-                  0x006752                  _IsReceiveBufferFullI2c2
-                  0x00675e                  _IsDataOrAddressI2c2
-                  0x00676a                  _IsReceiveOverflowI2c2
-                  0x006776                  _Start_I2C2
-                  0x006788                  _Stop_I2C2
-                  0x00679a                  _Write_I2C2
-                  0x0067a6                  _Read_I2C2
+.text             0x004dee       0x16e4
+ .text            0x004dee        0x62c C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o
+                  0x004e18                  _Graphics_OLED_init
+                  0x004e52                  _Graphics_OLED_poll
+                  0x004f92                  _Graphics_OLED_clear
+                  0x004fba                  _Graphics_OLED_pixel
+                  0x005068                  _Graphics_OLED_line
+                  0x0051b4                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putCharAvailable
+                  0x0051bc                  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Graphics_OLED.o:_putChar
+                  0x005366                  _Graphics_OLED_print
+                  0x00537a                  _Graphics_OLED_printAt
+                  0x0053a4                  _Graphics_OLED_bindAt
+ .text            0x00541a        0x598 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\streamIn.o
+                  0x00541a                  _streamIn_t_ptr_to_float
+                  0x005456                  _streamIn_t_ptr_to_char
+                  0x005490                  _streamIn_t_ptr_to_uint8_t
+                  0x0054ce                  _streamIn_t_ptr_to_uint16_t
+                  0x00550a                  _streamIn_t_ptr_to_uint32_t
+                  0x005546                  _streamIn_t_ptr_to_uint64
+                  0x005582                  _streamIn_t_ptr_to_int8_t
+                  0x0055c0                  _streamIn_t_ptr_to_int16_t
+                  0x0055fc                  _streamIn_t_ptr_to_int32_t
+                  0x005638                  _streamIn_t_ptr_to_int64_t
+                  0x005674                  _streamIn_t_ptr_to_ascii
+                  0x0056b4                  _sendDataToStream
+ .text            0x0059b2        0x2c0 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2_driver.o
+                  0x0059b2                  _Init_I2C_Driver
+                  0x0059be                  _getAvailable_out_count
+                  0x0059d2                  _countI2cStreamIn
+                  0x0059da                  _getI2cStreamIn
+                  0x0059e2                  _setI2cStreamOut
+                  0x0059ee                  _I2C_Begin_Transmision
+                  0x005a08                  _ini_I2C_IN
+                  0x005a32                  _ini_I2C_OUT
+                  0x005a5c                  _ini_I2C_OUT_FM
+                  0x005a66                  _reset_I2C_FRAME
+                  0x005a74                  _push_I2C_IN
+                  0x005aac                  _push_I2C_OUT
+                  0x005adc                  _pop_I2C_IN
+                  0x005b00                  _pop_I2C_OUT
+                  0x005b24                  _pop_I2C_OUT_FM
+                  0x005b34                  _i2cCloseWriteFrame
+                  0x005b76                  _i2cOpenReadFrame
+                  0x005bc2                  _I2c_driver_callback_slave
+                  0x005c02                  _I2c_driver_callback_master
+ .text            0x005c72        0x200 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\SSD1322_OLED.o
+                  0x005c72                  _SSD1322_OLED_sendCommand
+                  0x005c82                  _SSD1322_OLED_sendData
+                  0x005c8e                  _SSD1322_OLED_setColumn
+                  0x005ca4                  _SSD1322_OLED_setRow
+                  0x005cba                  _SSD1322_OLED_init
+                  0x005d62                  _SSD1322_OLED_clear
+                  0x005d90                  _SSD1322_OLED_refresh
+                  0x005e4a                  _SSD1322_OLED_setContrast
+                  0x005e5a                  _SSD1322_OLED_powerOn
+                  0x005e66                  _SSD1322_OLED_powerOff
+ .text            0x005e72        0x1e6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Pad.o
+                  0x005f06                  _Keyboard_Pad_init
+                  0x005f4e                  _Keyboard_Pad_setMode
+                  0x005f5c                  _Keyboard_Pad_poll
+ .text            0x006058        0x1e6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\Keyboard_Nav.o
+                  0x0060ec                  _Keyboard_Nav_init
+                  0x006134                  _Keyboard_Nav_setMode
+                  0x006142                  _Keyboard_Nav_poll
+ .text            0x00623e        0x190 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\stream.o
+                  0x00623e                  _streamPushCtr
+                  0x00628c                  _streamPush
+                  0x0062c6                  _streamPop
+                  0x0062fe                  _streamOpenWriteFrame
+                  0x006340                  _streamOpenReadFrame
+                  0x00638c                  _streamReOpenReadFrame
+                  0x0063a4                  _streamCloseReadFrame
+ .text            0x0063ce        0x104 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\I2C2.o
+                  0x0063ce                  _Init_Master_I2C2
+                  0x006436                  _CollisionReset_I2C2
+                  0x00643e                  _OverflowReset_I2C2
+                  0x006446                  _IsStartI2c2
+                  0x006452                  _IsCollisionDetectI2c2
+                  0x00645e                  _IsStopI2c2
+                  0x00646a                  _IsReceiveBufferFullI2c2
+                  0x006476                  _IsDataOrAddressI2c2
+                  0x006482                  _IsReceiveOverflowI2c2
+                  0x00648e                  _Start_I2C2
+                  0x0064a0                  _Stop_I2C2
+                  0x0064b2                  _Write_I2C2
+                  0x0064be                  _Read_I2C2
 
-.dinit            0x0067ba        0x100
- .dinit           0x0067ba        0x100 data_init
+.dinit            0x0064d2        0x100
+ .dinit           0x0064d2        0x100 data_init
 
-.text             0x0068ba        0x2c6
- .text            0x0068ba         0xec C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
-                  0x0068ba                  _onReset
-                  0x0068cc                  _etOut1
-                  0x0068dc                  _perrolLoco
-                  0x006908                  _PantallaPrincipal
-                  0x006944                  _testCanvas
- .text            0x0069a6         0xb6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\EMICBus.o
-                  0x0069a6                  _pI2C
-                  0x0069c2                  _EMICBus_init
-                  0x0069d0                  _poll_EMICBus
- .text            0x006a5c         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer_api1.o
-                  0x006a5c                  _setTime1
-                  0x006a78                  _timer1_Poll
- .text            0x006ab6         0x3e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\pmp.o
-                  0x006ab6                  _PMP_init
-                  0x006ac6                  _PMP_write
-                  0x006ad2                  _PMP_read
-                  0x006ae8                  _PMP_isBusy
- .text            0x006af4         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led1.o
-                  0x006af4                  _LEDs_Led1_init
-                  0x006afc                  _LEDs_Led1_state
- .text            0x006b2c         0x2e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\main.o
-                  0x006b2c                  _initSystem
-                  0x006b3a                  _main
- .text            0x006b5a         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
-                  0x006b5a                  _getSystemMilis
-                  0x006b64                  _callback
-                  0x006b76                  _systemTimeInit
+.text             0x0065d2        0x254
+ .text            0x0065d2         0xb6 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\EMICBus.o
+                  0x0065d2                  _pI2C
+                  0x0065ee                  _EMICBus_init
+                  0x0065fc                  _poll_EMICBus
+ .text            0x006688         0x7a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\userFncFile.o
+                  0x006688                  _onReset
+                  0x00669a                  _etOut1
+                  0x0066aa                  _Keyboard_Nav_onPress
+                  0x0066b6                  _Keyboard_Pad_onPress
+                  0x0066c2                  _perrolLoco
+ .text            0x006702         0x5a C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer_api1.o
+                  0x006702                  _setTime1
+                  0x00671e                  _timer1_Poll
+ .text            0x00675c         0x3e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\pmp.o
+                  0x00675c                  _PMP_init
+                  0x00676c                  _PMP_write
+                  0x006778                  _PMP_read
+                  0x00678e                  _PMP_isBusy
+ .text            0x00679a         0x38 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led1.o
+                  0x00679a                  _LEDs_Led1_init
+                  0x0067a2                  _LEDs_Led1_state
+ .text            0x0067d2         0x2e C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\main.o
+                  0x0067d2                  _initSystem
+                  0x0067e0                  _main
+ .text            0x006800         0x26 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\systemTimer.o
+                  0x006800                  _getSystemMilis
+                  0x00680a                  _callback
+                  0x00681c                  _systemTimeInit
 
-.init.delay32     0x006b80         0x1c
- .init.delay32    0x006b80         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x006b80                  ___delay32
+.init.delay32     0x006826         0x1c
+ .init.delay32    0x006826         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x006826                  ___delay32
 
-.text             0x006b9c         0x1e
- .text            0x006b9c         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
-                  0x006b9c                  _timer4_init
- .text            0x006bb2          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led2.o
-                  0x006bb2                  _LEDs_Led2_init
+.text             0x006842         0x1e
+ .text            0x006842         0x16 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\timer.o
+                  0x006842                  _timer4_init
+ .text            0x006858          0x8 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\build\default\production\led_Led2.o
+                  0x006858                  _LEDs_Led2_init

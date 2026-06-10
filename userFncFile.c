@@ -16,8 +16,8 @@
 /* User Variables */
 uint16_t counter = 0;
 uint8_t miVar;
-char key_pad;
-char key_nav;
+uint8_t key_pad;
+int8_t key_nav;
 
 void onReset()
 {
