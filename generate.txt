@@ -95,6 +95,7 @@
 
 
 // Keyboard Pad 3x4 (drive rows, sense columns with internal pull-up)
+// Keymap segun serigrafia del panel: 1 2 3 / 4 5 6 / 7 8 9 / , 0 Enter
 
 
 
@@ -108,6 +109,7 @@
 
 
 // Keyboard Nav 3x3 (row3 reuses ROW2 — dead case, ROWS=3)
+// Keymap: flechas (idx 3=up, 6=down, 7=right, 8=left) + AUX1..AUX5 (idx 4,5,0,1,2)
 
 
 
