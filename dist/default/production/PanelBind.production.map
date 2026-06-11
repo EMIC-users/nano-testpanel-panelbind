@@ -253,14 +253,14 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x4366          0x6519  (25881)
-.const                      0x4566               0x826           0xc39  (3129)
-.text                       0x4d8c              0x151a          0x1fa7  (8103)
-.dinit                      0x62a6               0x100           0x180  (384)
-.text                       0x63a6               0x252           0x37b  (891)
-.init.delay32               0x65f8                0x1c            0x2a  (42)
-.text                       0x6614                0x1e            0x2d  (45)
+.const                      0x4566               0x830           0xc48  (3144)
+.text                       0x4d96              0x151a          0x1fa7  (8103)
+.dinit                      0x62b0               0x100           0x180  (384)
+.text                       0x63b0               0x266           0x399  (921)
+.init.delay32               0x6616                0x1c            0x2a  (42)
+.text                       0x6632                0x1e            0x2d  (45)
 
-                 Total "program" memory used (bytes):         0x964b  (38475) 58%
+                 Total "program" memory used (bytes):         0x9678  (38520) 59%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -446,161 +446,161 @@ External Symbols in Program Memory (by address):
                   0x0044b2                  _scalbnf
                   0x004506                  _scalbnl
                   0x004d46                  _streamOut_Graphic_OLED
-                  0x004d84                  _streamIn_I2C
-                  0x004d88                  _streamOut_I2C
-                  0x004d8c                  _streamIn_t_ptr_to_float
-                  0x004dc8                  _streamIn_t_ptr_to_char
-                  0x004e02                  _streamIn_t_ptr_to_uint8_t
-                  0x004e40                  _streamIn_t_ptr_to_uint16_t
-                  0x004e7c                  _streamIn_t_ptr_to_uint32_t
-                  0x004eb8                  _streamIn_t_ptr_to_uint64
-                  0x004ef4                  _streamIn_t_ptr_to_int8_t
-                  0x004f32                  _streamIn_t_ptr_to_int16_t
-                  0x004f6e                  _streamIn_t_ptr_to_int32_t
-                  0x004faa                  _streamIn_t_ptr_to_int64_t
-                  0x004fe6                  _streamIn_t_ptr_to_ascii
-                  0x005026                  _sendDataToStream
-                  0x005324                  _Graphics_OLED_init
-                  0x00535e                  _Graphics_OLED_poll
-                  0x00536a                  _Graphics_OLED_clear
-                  0x005390                  _Graphics_OLED_pixel
-                  0x00543e                  _Graphics_OLED_line
-                  0x00558a                  build/default/production/Graphics_OLED.o:_putCharAvailable
-                  0x005592                  build/default/production/Graphics_OLED.o:_putChar
-                  0x00573c                  _Graphics_OLED_print
-                  0x005750                  _Graphics_OLED_printAt
-                  0x00577a                  _Init_I2C_Driver
-                  0x005786                  _getAvailable_out_count
-                  0x00579a                  _countI2cStreamIn
-                  0x0057a2                  _getI2cStreamIn
-                  0x0057aa                  _setI2cStreamOut
-                  0x0057b6                  _I2C_Begin_Transmision
-                  0x0057d0                  _ini_I2C_IN
-                  0x0057fa                  _ini_I2C_OUT
-                  0x005824                  _ini_I2C_OUT_FM
-                  0x00582e                  _reset_I2C_FRAME
-                  0x00583c                  _push_I2C_IN
-                  0x005874                  _push_I2C_OUT
-                  0x0058a4                  _pop_I2C_IN
-                  0x0058c8                  _pop_I2C_OUT
-                  0x0058ec                  _pop_I2C_OUT_FM
-                  0x0058fc                  _i2cCloseWriteFrame
-                  0x00593e                  _i2cOpenReadFrame
-                  0x00598a                  _I2c_driver_callback_slave
-                  0x0059ca                  _I2c_driver_callback_master
-                  0x005a3a                  _SSD1322_OLED_sendCommand
-                  0x005a4a                  _SSD1322_OLED_sendData
-                  0x005a56                  _SSD1322_OLED_setColumn
-                  0x005a6c                  _SSD1322_OLED_setRow
-                  0x005a82                  _SSD1322_OLED_init
-                  0x005b2a                  _SSD1322_OLED_clear
-                  0x005b58                  _SSD1322_OLED_refresh
-                  0x005c12                  _SSD1322_OLED_setContrast
-                  0x005c22                  _SSD1322_OLED_powerOn
-                  0x005c2e                  _SSD1322_OLED_powerOff
-                  0x005cce                  _Keyboard_Pad_init
-                  0x005d16                  _Keyboard_Pad_setMode
-                  0x005d24                  _Keyboard_Pad_poll
-                  0x005eba                  _Keyboard_Nav_init
-                  0x005f02                  _Keyboard_Nav_setMode
-                  0x005f10                  _Keyboard_Nav_poll
-                  0x006012                  _streamPushCtr
-                  0x006060                  _streamPush
-                  0x00609a                  _streamPop
-                  0x0060d2                  _streamOpenWriteFrame
-                  0x006114                  _streamOpenReadFrame
-                  0x006160                  _streamReOpenReadFrame
-                  0x006178                  _streamCloseReadFrame
-                  0x0061a2                  _Init_Master_I2C2
-                  0x00620a                  _CollisionReset_I2C2
-                  0x006212                  _OverflowReset_I2C2
-                  0x00621a                  _IsStartI2c2
-                  0x006226                  _IsCollisionDetectI2c2
-                  0x006232                  _IsStopI2c2
-                  0x00623e                  _IsReceiveBufferFullI2c2
-                  0x00624a                  _IsDataOrAddressI2c2
-                  0x006256                  _IsReceiveOverflowI2c2
-                  0x006262                  _Start_I2C2
-                  0x006274                  _Stop_I2C2
-                  0x006286                  _Write_I2C2
-                  0x006292                  _Read_I2C2
-                  0x0063a6                  _pI2C
-                  0x0063c2                  _EMICBus_init
-                  0x0063d0                  _poll_EMICBus
-                  0x00645c                  _onReset
-                  0x00646c                  _etOut1
-                  0x00647c                  _Keyboard_Nav_onPress
-                  0x006496                  _Keyboard_Pad_onPress
-                  0x0064b0                  _perrolLoco
-                  0x0064d4                  _setTime1
-                  0x0064f0                  _timer1_Poll
-                  0x00652e                  _PMP_init
-                  0x00653e                  _PMP_write
-                  0x00654a                  _PMP_read
-                  0x006560                  _PMP_isBusy
-                  0x00656c                  _LEDs_Led1_init
-                  0x006574                  _LEDs_Led1_state
-                  0x0065a4                  _initSystem
-                  0x0065b2                  _main
-                  0x0065d2                  _getSystemMilis
-                  0x0065dc                  _callback
-                  0x0065ee                  _systemTimeInit
-                  0x0065f8                  ___delay32
-                  0x006614                  _timer4_init
-                  0x00662a                  _LEDs_Led2_init
+                  0x004d8e                  _streamIn_I2C
+                  0x004d92                  _streamOut_I2C
+                  0x004d96                  _streamIn_t_ptr_to_float
+                  0x004dd2                  _streamIn_t_ptr_to_char
+                  0x004e0c                  _streamIn_t_ptr_to_uint8_t
+                  0x004e4a                  _streamIn_t_ptr_to_uint16_t
+                  0x004e86                  _streamIn_t_ptr_to_uint32_t
+                  0x004ec2                  _streamIn_t_ptr_to_uint64
+                  0x004efe                  _streamIn_t_ptr_to_int8_t
+                  0x004f3c                  _streamIn_t_ptr_to_int16_t
+                  0x004f78                  _streamIn_t_ptr_to_int32_t
+                  0x004fb4                  _streamIn_t_ptr_to_int64_t
+                  0x004ff0                  _streamIn_t_ptr_to_ascii
+                  0x005030                  _sendDataToStream
+                  0x00532e                  _Graphics_OLED_init
+                  0x005368                  _Graphics_OLED_poll
+                  0x005374                  _Graphics_OLED_clear
+                  0x00539a                  _Graphics_OLED_pixel
+                  0x005448                  _Graphics_OLED_line
+                  0x005594                  build/default/production/Graphics_OLED.o:_putCharAvailable
+                  0x00559c                  build/default/production/Graphics_OLED.o:_putChar
+                  0x005746                  _Graphics_OLED_print
+                  0x00575a                  _Graphics_OLED_printAt
+                  0x005784                  _Init_I2C_Driver
+                  0x005790                  _getAvailable_out_count
+                  0x0057a4                  _countI2cStreamIn
+                  0x0057ac                  _getI2cStreamIn
+                  0x0057b4                  _setI2cStreamOut
+                  0x0057c0                  _I2C_Begin_Transmision
+                  0x0057da                  _ini_I2C_IN
+                  0x005804                  _ini_I2C_OUT
+                  0x00582e                  _ini_I2C_OUT_FM
+                  0x005838                  _reset_I2C_FRAME
+                  0x005846                  _push_I2C_IN
+                  0x00587e                  _push_I2C_OUT
+                  0x0058ae                  _pop_I2C_IN
+                  0x0058d2                  _pop_I2C_OUT
+                  0x0058f6                  _pop_I2C_OUT_FM
+                  0x005906                  _i2cCloseWriteFrame
+                  0x005948                  _i2cOpenReadFrame
+                  0x005994                  _I2c_driver_callback_slave
+                  0x0059d4                  _I2c_driver_callback_master
+                  0x005a44                  _SSD1322_OLED_sendCommand
+                  0x005a54                  _SSD1322_OLED_sendData
+                  0x005a60                  _SSD1322_OLED_setColumn
+                  0x005a76                  _SSD1322_OLED_setRow
+                  0x005a8c                  _SSD1322_OLED_init
+                  0x005b34                  _SSD1322_OLED_clear
+                  0x005b62                  _SSD1322_OLED_refresh
+                  0x005c1c                  _SSD1322_OLED_setContrast
+                  0x005c2c                  _SSD1322_OLED_powerOn
+                  0x005c38                  _SSD1322_OLED_powerOff
+                  0x005cd8                  _Keyboard_Pad_init
+                  0x005d20                  _Keyboard_Pad_setMode
+                  0x005d2e                  _Keyboard_Pad_poll
+                  0x005ec4                  _Keyboard_Nav_init
+                  0x005f0c                  _Keyboard_Nav_setMode
+                  0x005f1a                  _Keyboard_Nav_poll
+                  0x00601c                  _streamPushCtr
+                  0x00606a                  _streamPush
+                  0x0060a4                  _streamPop
+                  0x0060dc                  _streamOpenWriteFrame
+                  0x00611e                  _streamOpenReadFrame
+                  0x00616a                  _streamReOpenReadFrame
+                  0x006182                  _streamCloseReadFrame
+                  0x0061ac                  _Init_Master_I2C2
+                  0x006214                  _CollisionReset_I2C2
+                  0x00621c                  _OverflowReset_I2C2
+                  0x006224                  _IsStartI2c2
+                  0x006230                  _IsCollisionDetectI2c2
+                  0x00623c                  _IsStopI2c2
+                  0x006248                  _IsReceiveBufferFullI2c2
+                  0x006254                  _IsDataOrAddressI2c2
+                  0x006260                  _IsReceiveOverflowI2c2
+                  0x00626c                  _Start_I2C2
+                  0x00627e                  _Stop_I2C2
+                  0x006290                  _Write_I2C2
+                  0x00629c                  _Read_I2C2
+                  0x0063b0                  _pI2C
+                  0x0063cc                  _EMICBus_init
+                  0x0063da                  _poll_EMICBus
+                  0x006466                  _onReset
+                  0x006476                  _etOut1
+                  0x006486                  _Keyboard_Nav_onPress
+                  0x0064aa                  _Keyboard_Pad_onPress
+                  0x0064ce                  _perrolLoco
+                  0x0064f2                  _setTime1
+                  0x00650e                  _timer1_Poll
+                  0x00654c                  _PMP_init
+                  0x00655c                  _PMP_write
+                  0x006568                  _PMP_read
+                  0x00657e                  _PMP_isBusy
+                  0x00658a                  _LEDs_Led1_init
+                  0x006592                  _LEDs_Led1_state
+                  0x0065c2                  _initSystem
+                  0x0065d0                  _main
+                  0x0065f0                  _getSystemMilis
+                  0x0065fa                  _callback
+                  0x00660c                  _systemTimeInit
+                  0x006616                  ___delay32
+                  0x006632                  _timer4_init
+                  0x006648                  _LEDs_Led2_init
 
 External Symbols in Program Memory (by name):
 
-                  0x00620a                  _CollisionReset_I2C2
-                  0x0063c2                  _EMICBus_init
-                  0x00536a                  _Graphics_OLED_clear
-                  0x005324                  _Graphics_OLED_init
-                  0x00543e                  _Graphics_OLED_line
-                  0x005390                  _Graphics_OLED_pixel
-                  0x00535e                  _Graphics_OLED_poll
-                  0x00573c                  _Graphics_OLED_print
-                  0x005750                  _Graphics_OLED_printAt
-                  0x0057b6                  _I2C_Begin_Transmision
-                  0x0059ca                  _I2c_driver_callback_master
-                  0x00598a                  _I2c_driver_callback_slave
-                  0x00577a                  _Init_I2C_Driver
-                  0x0061a2                  _Init_Master_I2C2
-                  0x006226                  _IsCollisionDetectI2c2
-                  0x00624a                  _IsDataOrAddressI2c2
-                  0x00623e                  _IsReceiveBufferFullI2c2
-                  0x006256                  _IsReceiveOverflowI2c2
-                  0x00621a                  _IsStartI2c2
-                  0x006232                  _IsStopI2c2
-                  0x005eba                  _Keyboard_Nav_init
-                  0x00647c                  _Keyboard_Nav_onPress
-                  0x005f10                  _Keyboard_Nav_poll
-                  0x005f02                  _Keyboard_Nav_setMode
-                  0x005cce                  _Keyboard_Pad_init
-                  0x006496                  _Keyboard_Pad_onPress
-                  0x005d24                  _Keyboard_Pad_poll
-                  0x005d16                  _Keyboard_Pad_setMode
-                  0x00656c                  _LEDs_Led1_init
-                  0x006574                  _LEDs_Led1_state
-                  0x00662a                  _LEDs_Led2_init
-                  0x006212                  _OverflowReset_I2C2
-                  0x00652e                  _PMP_init
-                  0x006560                  _PMP_isBusy
-                  0x00654a                  _PMP_read
-                  0x00653e                  _PMP_write
-                  0x006292                  _Read_I2C2
-                  0x005b2a                  _SSD1322_OLED_clear
-                  0x005a82                  _SSD1322_OLED_init
-                  0x005c2e                  _SSD1322_OLED_powerOff
-                  0x005c22                  _SSD1322_OLED_powerOn
-                  0x005b58                  _SSD1322_OLED_refresh
-                  0x005a3a                  _SSD1322_OLED_sendCommand
-                  0x005a4a                  _SSD1322_OLED_sendData
-                  0x005a56                  _SSD1322_OLED_setColumn
-                  0x005c12                  _SSD1322_OLED_setContrast
-                  0x005a6c                  _SSD1322_OLED_setRow
-                  0x006262                  _Start_I2C2
-                  0x006274                  _Stop_I2C2
-                  0x006286                  _Write_I2C2
+                  0x006214                  _CollisionReset_I2C2
+                  0x0063cc                  _EMICBus_init
+                  0x005374                  _Graphics_OLED_clear
+                  0x00532e                  _Graphics_OLED_init
+                  0x005448                  _Graphics_OLED_line
+                  0x00539a                  _Graphics_OLED_pixel
+                  0x005368                  _Graphics_OLED_poll
+                  0x005746                  _Graphics_OLED_print
+                  0x00575a                  _Graphics_OLED_printAt
+                  0x0057c0                  _I2C_Begin_Transmision
+                  0x0059d4                  _I2c_driver_callback_master
+                  0x005994                  _I2c_driver_callback_slave
+                  0x005784                  _Init_I2C_Driver
+                  0x0061ac                  _Init_Master_I2C2
+                  0x006230                  _IsCollisionDetectI2c2
+                  0x006254                  _IsDataOrAddressI2c2
+                  0x006248                  _IsReceiveBufferFullI2c2
+                  0x006260                  _IsReceiveOverflowI2c2
+                  0x006224                  _IsStartI2c2
+                  0x00623c                  _IsStopI2c2
+                  0x005ec4                  _Keyboard_Nav_init
+                  0x006486                  _Keyboard_Nav_onPress
+                  0x005f1a                  _Keyboard_Nav_poll
+                  0x005f0c                  _Keyboard_Nav_setMode
+                  0x005cd8                  _Keyboard_Pad_init
+                  0x0064aa                  _Keyboard_Pad_onPress
+                  0x005d2e                  _Keyboard_Pad_poll
+                  0x005d20                  _Keyboard_Pad_setMode
+                  0x00658a                  _LEDs_Led1_init
+                  0x006592                  _LEDs_Led1_state
+                  0x006648                  _LEDs_Led2_init
+                  0x00621c                  _OverflowReset_I2C2
+                  0x00654c                  _PMP_init
+                  0x00657e                  _PMP_isBusy
+                  0x006568                  _PMP_read
+                  0x00655c                  _PMP_write
+                  0x00629c                  _Read_I2C2
+                  0x005b34                  _SSD1322_OLED_clear
+                  0x005a8c                  _SSD1322_OLED_init
+                  0x005c38                  _SSD1322_OLED_powerOff
+                  0x005c2c                  _SSD1322_OLED_powerOn
+                  0x005b62                  _SSD1322_OLED_refresh
+                  0x005a44                  _SSD1322_OLED_sendCommand
+                  0x005a54                  _SSD1322_OLED_sendData
+                  0x005a60                  _SSD1322_OLED_setColumn
+                  0x005c1c                  _SSD1322_OLED_setContrast
+                  0x005a76                  _SSD1322_OLED_setRow
+                  0x00626c                  _Start_I2C2
+                  0x00627e                  _Stop_I2C2
+                  0x006290                  _Write_I2C2
                   0x000358                  __DefaultInterrupt
                   0x000332                  __MI2C2Interrupt
                   0x00030c                  __SI2C2Interrupt
@@ -609,7 +609,7 @@ External Symbols in Program Memory (by name):
                   0x0003d4                  ___addsf3
                   0x0003d4                  ___addsf3x
                   0x003042                  ___cvt_u
-                  0x0065f8                  ___delay32
+                  0x006616                  ___delay32
                   0x00368c                  ___divdf3
                   0x003ef0                  ___divdi3
                   0x00059e                  ___divsf3
@@ -704,76 +704,76 @@ External Symbols in Program Memory (by name):
                   0x002340                  _atoi
                   0x0023a0                  _atol
                   0x002406                  _atoll
-                  0x0065dc                  _callback
+                  0x0065fa                  _callback
                   0x004042                  _copysignl
-                  0x00579a                  _countI2cStreamIn
-                  0x00646c                  _etOut1
+                  0x0057a4                  _countI2cStreamIn
+                  0x006476                  _etOut1
                   0x004076                  _fabsl
                   0x00408c                  _floorl
                   0x004186                  _fmodl
-                  0x005786                  _getAvailable_out_count
-                  0x0057a2                  _getI2cStreamIn
-                  0x0065d2                  _getSystemMilis
-                  0x0058fc                  _i2cCloseWriteFrame
-                  0x00593e                  _i2cOpenReadFrame
-                  0x0057d0                  _ini_I2C_IN
-                  0x0057fa                  _ini_I2C_OUT
-                  0x005824                  _ini_I2C_OUT_FM
-                  0x0065a4                  _initSystem
-                  0x0065b2                  _main
+                  0x005790                  _getAvailable_out_count
+                  0x0057ac                  _getI2cStreamIn
+                  0x0065f0                  _getSystemMilis
+                  0x005906                  _i2cCloseWriteFrame
+                  0x005948                  _i2cOpenReadFrame
+                  0x0057da                  _ini_I2C_IN
+                  0x005804                  _ini_I2C_OUT
+                  0x00582e                  _ini_I2C_OUT_FM
+                  0x0065c2                  _initSystem
+                  0x0065d0                  _main
                   0x000eb8                  _memcpy
                   0x0009ac                  _memset
-                  0x00645c                  _onReset
-                  0x0063a6                  _pI2C
-                  0x0064b0                  _perrolLoco
-                  0x0063d0                  _poll_EMICBus
-                  0x0058a4                  _pop_I2C_IN
-                  0x0058c8                  _pop_I2C_OUT
-                  0x0058ec                  _pop_I2C_OUT_FM
-                  0x00583c                  _push_I2C_IN
-                  0x005874                  _push_I2C_OUT
-                  0x00582e                  _reset_I2C_FRAME
+                  0x006466                  _onReset
+                  0x0063b0                  _pI2C
+                  0x0064ce                  _perrolLoco
+                  0x0063da                  _poll_EMICBus
+                  0x0058ae                  _pop_I2C_IN
+                  0x0058d2                  _pop_I2C_OUT
+                  0x0058f6                  _pop_I2C_OUT_FM
+                  0x005846                  _push_I2C_IN
+                  0x00587e                  _push_I2C_OUT
+                  0x005838                  _reset_I2C_FRAME
                   0x0044b2                  _scalbnf
                   0x004506                  _scalbnl
-                  0x005026                  _sendDataToStream
-                  0x0057aa                  _setI2cStreamOut
-                  0x0064d4                  _setTime1
+                  0x005030                  _sendDataToStream
+                  0x0057b4                  _setI2cStreamOut
+                  0x0064f2                  _setTime1
                   0x000a72                  _snprintf
                   0x003424                  _strcpy
-                  0x006178                  _streamCloseReadFrame
-                  0x004d84                  _streamIn_I2C
-                  0x004fe6                  _streamIn_t_ptr_to_ascii
-                  0x004dc8                  _streamIn_t_ptr_to_char
-                  0x004d8c                  _streamIn_t_ptr_to_float
-                  0x004f32                  _streamIn_t_ptr_to_int16_t
-                  0x004f6e                  _streamIn_t_ptr_to_int32_t
-                  0x004faa                  _streamIn_t_ptr_to_int64_t
-                  0x004ef4                  _streamIn_t_ptr_to_int8_t
-                  0x004e40                  _streamIn_t_ptr_to_uint16_t
-                  0x004e7c                  _streamIn_t_ptr_to_uint32_t
-                  0x004eb8                  _streamIn_t_ptr_to_uint64
-                  0x004e02                  _streamIn_t_ptr_to_uint8_t
-                  0x006114                  _streamOpenReadFrame
-                  0x0060d2                  _streamOpenWriteFrame
+                  0x006182                  _streamCloseReadFrame
+                  0x004d8e                  _streamIn_I2C
+                  0x004ff0                  _streamIn_t_ptr_to_ascii
+                  0x004dd2                  _streamIn_t_ptr_to_char
+                  0x004d96                  _streamIn_t_ptr_to_float
+                  0x004f3c                  _streamIn_t_ptr_to_int16_t
+                  0x004f78                  _streamIn_t_ptr_to_int32_t
+                  0x004fb4                  _streamIn_t_ptr_to_int64_t
+                  0x004efe                  _streamIn_t_ptr_to_int8_t
+                  0x004e4a                  _streamIn_t_ptr_to_uint16_t
+                  0x004e86                  _streamIn_t_ptr_to_uint32_t
+                  0x004ec2                  _streamIn_t_ptr_to_uint64
+                  0x004e0c                  _streamIn_t_ptr_to_uint8_t
+                  0x00611e                  _streamOpenReadFrame
+                  0x0060dc                  _streamOpenWriteFrame
                   0x004d46                  _streamOut_Graphic_OLED
-                  0x004d88                  _streamOut_I2C
-                  0x00609a                  _streamPop
-                  0x006060                  _streamPush
-                  0x006012                  _streamPushCtr
-                  0x006160                  _streamReOpenReadFrame
+                  0x004d92                  _streamOut_I2C
+                  0x0060a4                  _streamPop
+                  0x00606a                  _streamPush
+                  0x00601c                  _streamPushCtr
+                  0x00616a                  _streamReOpenReadFrame
                   0x003282                  _strlen
                   0x000f28                  _strtod
                   0x000f22                  _strtof
                   0x000f2e                  _strtold
-                  0x0065ee                  _systemTimeInit
-                  0x0064f0                  _timer1_Poll
-                  0x006614                  _timer4_init
+                  0x00660c                  _systemTimeInit
+                  0x00650e                  _timer1_Poll
+                  0x006632                  _timer4_init
                   0x0032b2                  _tolower
                   0x003432                  _toupper
                   0x000ace                  _vfprintf
                   0x000a7e                  _vsnprintf
-                  0x005592                  build/default/production/Graphics_OLED.o:_putChar
-                  0x00558a                  build/default/production/Graphics_OLED.o:_putCharAvailable
+                  0x00559c                  build/default/production/Graphics_OLED.o:_putChar
+                  0x005594                  build/default/production/Graphics_OLED.o:_putCharAvailable
 
 Memory Configuration
 
@@ -2299,141 +2299,141 @@ __xc_reference_data
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 build/default/production/main.o
 
-.const              0xc566        0x826 load address 0x004566  
+.const              0xc566        0x830 load address 0x004566  
  .const             0xc566        0x7f0 build/default/production/Graphics_OLED.o
                     0xcd46                  _streamOut_Graphic_OLED
- .const             0xcd56         0x16 build/default/production/userFncFile.o
- .const             0xcd6c          0xc build/default/production/Keyboard_Pad.o
- .const             0xcd78          0xc build/default/production/Keyboard_Nav.o
- .const             0xcd84          0x8 build/default/production/I2C2_driver.o
-                    0xcd84                  _streamIn_I2C
-                    0xcd88                  _streamOut_I2C
+ .const             0xcd56         0x20 build/default/production/userFncFile.o
+ .const             0xcd76          0xc build/default/production/Keyboard_Pad.o
+ .const             0xcd82          0xc build/default/production/Keyboard_Nav.o
+ .const             0xcd8e          0x8 build/default/production/I2C2_driver.o
+                    0xcd8e                  _streamIn_I2C
+                    0xcd92                  _streamOut_I2C
 
-.text             0x004d8c       0x151a
- .text            0x004d8c        0x598 build/default/production/streamIn.o
-                  0x004d8c                  _streamIn_t_ptr_to_float
-                  0x004dc8                  _streamIn_t_ptr_to_char
-                  0x004e02                  _streamIn_t_ptr_to_uint8_t
-                  0x004e40                  _streamIn_t_ptr_to_uint16_t
-                  0x004e7c                  _streamIn_t_ptr_to_uint32_t
-                  0x004eb8                  _streamIn_t_ptr_to_uint64
-                  0x004ef4                  _streamIn_t_ptr_to_int8_t
-                  0x004f32                  _streamIn_t_ptr_to_int16_t
-                  0x004f6e                  _streamIn_t_ptr_to_int32_t
-                  0x004faa                  _streamIn_t_ptr_to_int64_t
-                  0x004fe6                  _streamIn_t_ptr_to_ascii
-                  0x005026                  _sendDataToStream
- .text            0x005324        0x456 build/default/production/Graphics_OLED.o
-                  0x005324                  _Graphics_OLED_init
-                  0x00535e                  _Graphics_OLED_poll
-                  0x00536a                  _Graphics_OLED_clear
-                  0x005390                  _Graphics_OLED_pixel
-                  0x00543e                  _Graphics_OLED_line
-                  0x00558a                  build/default/production/Graphics_OLED.o:_putCharAvailable
-                  0x005592                  build/default/production/Graphics_OLED.o:_putChar
-                  0x00573c                  _Graphics_OLED_print
-                  0x005750                  _Graphics_OLED_printAt
- .text            0x00577a        0x2c0 build/default/production/I2C2_driver.o
-                  0x00577a                  _Init_I2C_Driver
-                  0x005786                  _getAvailable_out_count
-                  0x00579a                  _countI2cStreamIn
-                  0x0057a2                  _getI2cStreamIn
-                  0x0057aa                  _setI2cStreamOut
-                  0x0057b6                  _I2C_Begin_Transmision
-                  0x0057d0                  _ini_I2C_IN
-                  0x0057fa                  _ini_I2C_OUT
-                  0x005824                  _ini_I2C_OUT_FM
-                  0x00582e                  _reset_I2C_FRAME
-                  0x00583c                  _push_I2C_IN
-                  0x005874                  _push_I2C_OUT
-                  0x0058a4                  _pop_I2C_IN
-                  0x0058c8                  _pop_I2C_OUT
-                  0x0058ec                  _pop_I2C_OUT_FM
-                  0x0058fc                  _i2cCloseWriteFrame
-                  0x00593e                  _i2cOpenReadFrame
-                  0x00598a                  _I2c_driver_callback_slave
-                  0x0059ca                  _I2c_driver_callback_master
- .text            0x005a3a        0x200 build/default/production/SSD1322_OLED.o
-                  0x005a3a                  _SSD1322_OLED_sendCommand
-                  0x005a4a                  _SSD1322_OLED_sendData
-                  0x005a56                  _SSD1322_OLED_setColumn
-                  0x005a6c                  _SSD1322_OLED_setRow
-                  0x005a82                  _SSD1322_OLED_init
-                  0x005b2a                  _SSD1322_OLED_clear
-                  0x005b58                  _SSD1322_OLED_refresh
-                  0x005c12                  _SSD1322_OLED_setContrast
-                  0x005c22                  _SSD1322_OLED_powerOn
-                  0x005c2e                  _SSD1322_OLED_powerOff
- .text            0x005c3a        0x1ec build/default/production/Keyboard_Pad.o
-                  0x005cce                  _Keyboard_Pad_init
-                  0x005d16                  _Keyboard_Pad_setMode
-                  0x005d24                  _Keyboard_Pad_poll
- .text            0x005e26        0x1ec build/default/production/Keyboard_Nav.o
-                  0x005eba                  _Keyboard_Nav_init
-                  0x005f02                  _Keyboard_Nav_setMode
-                  0x005f10                  _Keyboard_Nav_poll
- .text            0x006012        0x190 build/default/production/stream.o
-                  0x006012                  _streamPushCtr
-                  0x006060                  _streamPush
-                  0x00609a                  _streamPop
-                  0x0060d2                  _streamOpenWriteFrame
-                  0x006114                  _streamOpenReadFrame
-                  0x006160                  _streamReOpenReadFrame
-                  0x006178                  _streamCloseReadFrame
- .text            0x0061a2        0x104 build/default/production/I2C2.o
-                  0x0061a2                  _Init_Master_I2C2
-                  0x00620a                  _CollisionReset_I2C2
-                  0x006212                  _OverflowReset_I2C2
-                  0x00621a                  _IsStartI2c2
-                  0x006226                  _IsCollisionDetectI2c2
-                  0x006232                  _IsStopI2c2
-                  0x00623e                  _IsReceiveBufferFullI2c2
-                  0x00624a                  _IsDataOrAddressI2c2
-                  0x006256                  _IsReceiveOverflowI2c2
-                  0x006262                  _Start_I2C2
-                  0x006274                  _Stop_I2C2
-                  0x006286                  _Write_I2C2
-                  0x006292                  _Read_I2C2
+.text             0x004d96       0x151a
+ .text            0x004d96        0x598 build/default/production/streamIn.o
+                  0x004d96                  _streamIn_t_ptr_to_float
+                  0x004dd2                  _streamIn_t_ptr_to_char
+                  0x004e0c                  _streamIn_t_ptr_to_uint8_t
+                  0x004e4a                  _streamIn_t_ptr_to_uint16_t
+                  0x004e86                  _streamIn_t_ptr_to_uint32_t
+                  0x004ec2                  _streamIn_t_ptr_to_uint64
+                  0x004efe                  _streamIn_t_ptr_to_int8_t
+                  0x004f3c                  _streamIn_t_ptr_to_int16_t
+                  0x004f78                  _streamIn_t_ptr_to_int32_t
+                  0x004fb4                  _streamIn_t_ptr_to_int64_t
+                  0x004ff0                  _streamIn_t_ptr_to_ascii
+                  0x005030                  _sendDataToStream
+ .text            0x00532e        0x456 build/default/production/Graphics_OLED.o
+                  0x00532e                  _Graphics_OLED_init
+                  0x005368                  _Graphics_OLED_poll
+                  0x005374                  _Graphics_OLED_clear
+                  0x00539a                  _Graphics_OLED_pixel
+                  0x005448                  _Graphics_OLED_line
+                  0x005594                  build/default/production/Graphics_OLED.o:_putCharAvailable
+                  0x00559c                  build/default/production/Graphics_OLED.o:_putChar
+                  0x005746                  _Graphics_OLED_print
+                  0x00575a                  _Graphics_OLED_printAt
+ .text            0x005784        0x2c0 build/default/production/I2C2_driver.o
+                  0x005784                  _Init_I2C_Driver
+                  0x005790                  _getAvailable_out_count
+                  0x0057a4                  _countI2cStreamIn
+                  0x0057ac                  _getI2cStreamIn
+                  0x0057b4                  _setI2cStreamOut
+                  0x0057c0                  _I2C_Begin_Transmision
+                  0x0057da                  _ini_I2C_IN
+                  0x005804                  _ini_I2C_OUT
+                  0x00582e                  _ini_I2C_OUT_FM
+                  0x005838                  _reset_I2C_FRAME
+                  0x005846                  _push_I2C_IN
+                  0x00587e                  _push_I2C_OUT
+                  0x0058ae                  _pop_I2C_IN
+                  0x0058d2                  _pop_I2C_OUT
+                  0x0058f6                  _pop_I2C_OUT_FM
+                  0x005906                  _i2cCloseWriteFrame
+                  0x005948                  _i2cOpenReadFrame
+                  0x005994                  _I2c_driver_callback_slave
+                  0x0059d4                  _I2c_driver_callback_master
+ .text            0x005a44        0x200 build/default/production/SSD1322_OLED.o
+                  0x005a44                  _SSD1322_OLED_sendCommand
+                  0x005a54                  _SSD1322_OLED_sendData
+                  0x005a60                  _SSD1322_OLED_setColumn
+                  0x005a76                  _SSD1322_OLED_setRow
+                  0x005a8c                  _SSD1322_OLED_init
+                  0x005b34                  _SSD1322_OLED_clear
+                  0x005b62                  _SSD1322_OLED_refresh
+                  0x005c1c                  _SSD1322_OLED_setContrast
+                  0x005c2c                  _SSD1322_OLED_powerOn
+                  0x005c38                  _SSD1322_OLED_powerOff
+ .text            0x005c44        0x1ec build/default/production/Keyboard_Pad.o
+                  0x005cd8                  _Keyboard_Pad_init
+                  0x005d20                  _Keyboard_Pad_setMode
+                  0x005d2e                  _Keyboard_Pad_poll
+ .text            0x005e30        0x1ec build/default/production/Keyboard_Nav.o
+                  0x005ec4                  _Keyboard_Nav_init
+                  0x005f0c                  _Keyboard_Nav_setMode
+                  0x005f1a                  _Keyboard_Nav_poll
+ .text            0x00601c        0x190 build/default/production/stream.o
+                  0x00601c                  _streamPushCtr
+                  0x00606a                  _streamPush
+                  0x0060a4                  _streamPop
+                  0x0060dc                  _streamOpenWriteFrame
+                  0x00611e                  _streamOpenReadFrame
+                  0x00616a                  _streamReOpenReadFrame
+                  0x006182                  _streamCloseReadFrame
+ .text            0x0061ac        0x104 build/default/production/I2C2.o
+                  0x0061ac                  _Init_Master_I2C2
+                  0x006214                  _CollisionReset_I2C2
+                  0x00621c                  _OverflowReset_I2C2
+                  0x006224                  _IsStartI2c2
+                  0x006230                  _IsCollisionDetectI2c2
+                  0x00623c                  _IsStopI2c2
+                  0x006248                  _IsReceiveBufferFullI2c2
+                  0x006254                  _IsDataOrAddressI2c2
+                  0x006260                  _IsReceiveOverflowI2c2
+                  0x00626c                  _Start_I2C2
+                  0x00627e                  _Stop_I2C2
+                  0x006290                  _Write_I2C2
+                  0x00629c                  _Read_I2C2
 
-.dinit            0x0062a6        0x100
- .dinit           0x0062a6        0x100 data_init
+.dinit            0x0062b0        0x100
+ .dinit           0x0062b0        0x100 data_init
 
-.text             0x0063a6        0x252
- .text            0x0063a6         0xb6 build/default/production/EMICBus.o
-                  0x0063a6                  _pI2C
-                  0x0063c2                  _EMICBus_init
-                  0x0063d0                  _poll_EMICBus
- .text            0x00645c         0x78 build/default/production/userFncFile.o
-                  0x00645c                  _onReset
-                  0x00646c                  _etOut1
-                  0x00647c                  _Keyboard_Nav_onPress
-                  0x006496                  _Keyboard_Pad_onPress
-                  0x0064b0                  _perrolLoco
- .text            0x0064d4         0x5a build/default/production/timer_api1.o
-                  0x0064d4                  _setTime1
-                  0x0064f0                  _timer1_Poll
- .text            0x00652e         0x3e build/default/production/pmp.o
-                  0x00652e                  _PMP_init
-                  0x00653e                  _PMP_write
-                  0x00654a                  _PMP_read
-                  0x006560                  _PMP_isBusy
- .text            0x00656c         0x38 build/default/production/led_Led1.o
-                  0x00656c                  _LEDs_Led1_init
-                  0x006574                  _LEDs_Led1_state
- .text            0x0065a4         0x2e build/default/production/main.o
-                  0x0065a4                  _initSystem
-                  0x0065b2                  _main
- .text            0x0065d2         0x26 build/default/production/systemTimer.o
-                  0x0065d2                  _getSystemMilis
-                  0x0065dc                  _callback
-                  0x0065ee                  _systemTimeInit
+.text             0x0063b0        0x266
+ .text            0x0063b0         0xb6 build/default/production/EMICBus.o
+                  0x0063b0                  _pI2C
+                  0x0063cc                  _EMICBus_init
+                  0x0063da                  _poll_EMICBus
+ .text            0x006466         0x8c build/default/production/userFncFile.o
+                  0x006466                  _onReset
+                  0x006476                  _etOut1
+                  0x006486                  _Keyboard_Nav_onPress
+                  0x0064aa                  _Keyboard_Pad_onPress
+                  0x0064ce                  _perrolLoco
+ .text            0x0064f2         0x5a build/default/production/timer_api1.o
+                  0x0064f2                  _setTime1
+                  0x00650e                  _timer1_Poll
+ .text            0x00654c         0x3e build/default/production/pmp.o
+                  0x00654c                  _PMP_init
+                  0x00655c                  _PMP_write
+                  0x006568                  _PMP_read
+                  0x00657e                  _PMP_isBusy
+ .text            0x00658a         0x38 build/default/production/led_Led1.o
+                  0x00658a                  _LEDs_Led1_init
+                  0x006592                  _LEDs_Led1_state
+ .text            0x0065c2         0x2e build/default/production/main.o
+                  0x0065c2                  _initSystem
+                  0x0065d0                  _main
+ .text            0x0065f0         0x26 build/default/production/systemTimer.o
+                  0x0065f0                  _getSystemMilis
+                  0x0065fa                  _callback
+                  0x00660c                  _systemTimeInit
 
-.init.delay32     0x0065f8         0x1c
- .init.delay32    0x0065f8         0x1c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x0065f8                  ___delay32
+.init.delay32     0x006616         0x1c
+ .init.delay32    0x006616         0x1c c:/program files/microchip/xc16/v2.00/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x006616                  ___delay32
 
-.text             0x006614         0x1e
- .text            0x006614         0x16 build/default/production/timer.o
-                  0x006614                  _timer4_init
- .text            0x00662a          0x8 build/default/production/led_Led2.o
-                  0x00662a                  _LEDs_Led2_init
+.text             0x006632         0x1e
+ .text            0x006632         0x16 build/default/production/timer.o
+                  0x006632                  _timer4_init
+ .text            0x006648          0x8 build/default/production/led_Led2.o
+                  0x006648                  _LEDs_Led2_init
