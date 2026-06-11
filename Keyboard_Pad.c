@@ -20,7 +20,7 @@ static uint32_t lastScan = 0;
 // Filled from the key0..key11 instance parameters; unmapped entries default
 // to their own index, so an instance without keymap behaves as before.
 // Fixed size 12 = physical maximum of this API (4 rows x 3 columns).
-static const uint8_t kbdMap[12] = {
+static const char kbdMap[12] = {
     [0]  = '1',  [1]  = '2',  [2]  = '3',
     [3]  = '4',  [4]  = '5',  [5]  = '6',
     [6]  = '7',  [7]  = '8',  [8]  = '9',
