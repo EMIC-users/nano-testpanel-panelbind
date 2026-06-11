@@ -183,7 +183,7 @@ void sendDataToStream(const streamOut_t* stream, char* format_, va_list arg)
 {
     char* format = format_;
     int i;
-    char strFormat[10] = {0};  // peque�o buffer para el formato (ej: "%llu")
+    char strFormat[10] = {0};  // pequeño buffer para el formato (ej: "%llu")
     char auxStr[32];           // string temporal para el valor convertido
     int okFormat = 0;
 
@@ -201,6 +201,13 @@ void sendDataToStream(const streamOut_t* stream, char* format_, va_list arg)
 
                 switch (*format)
                 {
+                    case 'c':
+                    {
+                        okFormat = 1;
+                        *auxStr = (char)va_arg(arg, int); // char se promociona a int
+                        auxStr[1] = '\0';
+                        break;
+                    }
                     case 'l':
                         typeSelector <<= 1;
                         break;
@@ -217,7 +224,7 @@ void sendDataToStream(const streamOut_t* stream, char* format_, va_list arg)
                             case 8:
                             case 16:
                             {
-                                unsigned int val = va_arg(arg, unsigned int); // promoci�n
+                                unsigned int val = va_arg(arg, unsigned int); // promoción
                                 snprintf(auxStr, sizeof(auxStr), strFormat, val);
                                 break;
                             }

@@ -48,7 +48,6 @@ void Graphics_OLED_clear(void);
 
 void Graphics_OLED_printAt(uint8_t x, uint8_t y, uint8_t fontId, char* format, ...);
 
-void Graphics_OLED_bindAt(uint8_t x, uint8_t y, uint8_t fontId, void* var, uint8_t type, char* format);
 
 
 
