@@ -36,14 +36,14 @@ void etOut1()
 void Keyboard_Nav_onPress(uint8_t key)
 {
     key_nav = (char)(key);
-    Graphics_OLED_printAt(20, 20, 0, "NAV:%u %c, ", key, key_nav);
+    Graphics_OLED_printAt(20, 20, 0, "NAV:%u ,%c ", key, key_nav);
 }
 
 
 void Keyboard_Pad_onPress(uint8_t key)
 {
-    key_pad = ;
-    Graphics_OLED_printAt(20, 40, 0, "PAD:%u %c,", key, key_pad);
+    key_pad = (char)(key);
+    Graphics_OLED_printAt(20, 40, 0, "PAD:%u ,%c", key, key_pad);
 }
 
 
