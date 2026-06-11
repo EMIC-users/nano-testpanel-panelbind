@@ -16,8 +16,8 @@
 /* User Variables */
 uint16_t counter = 0;
 uint8_t miVar;
-uint8_t key_pad;
-int8_t key_nav;
+char key_pad;
+char key_nav;
 
 void onReset()
 {
@@ -35,13 +35,15 @@ void etOut1()
 
 void Keyboard_Nav_onPress(uint8_t key)
 {
-    Graphics_OLED_printAt(20, 20, 0, "NAV:%u", key);
+    key_nav = (char)(key);
+    Graphics_OLED_printAt(20, 20, 0, "NAV:%u %c, ", key, key_nav);
 }
 
 
 void Keyboard_Pad_onPress(uint8_t key)
 {
-    Graphics_OLED_printAt(20, 40, 0, "PAD:%u", key);
+    key_pad = ;
+    Graphics_OLED_printAt(20, 40, 0, "PAD:%u %c,", key, key_pad);
 }
 
 
