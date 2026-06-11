@@ -6,6 +6,7 @@
 
 #include <stdint.h>
 #include "gpio.h"
+#include "keyCodes.h"
 
 /*==================[macros]=================================================*/
 

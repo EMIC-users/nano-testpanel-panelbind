@@ -101,6 +101,9 @@
 
 
 
+// Shared key-code table (KEY_UP, KEY_ENTER, ...) — copied once for all instances.
+
+// key0..key11 map physical index (row*cols+col) to a key code; default = identity.
 
 
 
@@ -111,6 +114,9 @@
 
 
 
+// Shared key-code table (KEY_UP, KEY_ENTER, ...) — copied once for all instances.
+
+// key0..key11 map physical index (row*cols+col) to a key code; default = identity.
 
 
 

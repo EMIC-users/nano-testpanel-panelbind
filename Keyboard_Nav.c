@@ -16,6 +16,17 @@ static uint8_t  debounce[KBD_Nav_KEYS];
 static uint8_t  mode = 0;
 static uint32_t lastScan = 0;
 
+// Physical index (row*cols+col) -> key code reported by onPress/onRelease.
+// Filled from the key0..key11 instance parameters; unmapped entries default
+// to their own index, so an instance without keymap behaves as before.
+// Fixed size 12 = physical maximum of this API (4 rows x 3 columns).
+static const uint8_t kbdMap[12] = {
+    [0]  = 0,  [1]  = 1,  [2]  = 2,
+    [3]  = 3,  [4]  = 4,  [5]  = 5,
+    [6]  = 6,  [7]  = 7,  [8]  = 8,
+    [9]  = 9,  [10] = 10, [11] = 11
+};
+
 /*==================[internal functions]====================================*/
 
 // Drive a row LOW (enable its output; LAT was pre-loaded to 0 in init).
@@ -116,7 +127,7 @@ void Keyboard_Nav_poll(void)
                     if (pressed && !keyState[idx])
                     {
                         keyState[idx] = 1;
-                        Keyboard_Nav_onPress(idx);
+                        Keyboard_Nav_onPress(kbdMap[idx]);
                     }
                     else if (!pressed && keyState[idx])
                     {
