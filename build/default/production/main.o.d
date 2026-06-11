@@ -13,6 +13,7 @@ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind\b
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/pmp.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/Keyboard_Pad.h \
+ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/keyCodes.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/Keyboard_Nav.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/EMICBus.h \
  C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/system.h \
@@ -45,6 +46,8 @@ C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/i
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/streamOut.h:
 
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/Keyboard_Pad.h:
+
+C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/keyCodes.h:
 
 C:/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/TestPanel/PanelBind/inc/Keyboard_Nav.h:
 
