@@ -26,7 +26,7 @@ void onReset()
 {
     Graphics_OLED_clear();
     display1();
-    setTime1(500, 'A');
+    setTime1(5000, 'A');
 }
 
 
