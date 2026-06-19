@@ -24,10 +24,8 @@ char keychar = 65;
 void onReset()
 {
     Graphics_OLED_clear();
-    Graphics_OLED_bindAt(60, 0, 1, counter, 1, "%5u");
-    Graphics_OLED_bindAt(0, 20, 1, bigcounter, 7, "%10llu");
-    Graphics_OLED_bindAt(0, 40, 1, keychar, 9, "%c");
-    setTime1(5000, 'T');
+    display1();
+    setTime1(500, 'T');
 }
 
 
@@ -36,12 +34,13 @@ void display1(void)
     Graphics_OLED_clear();
     Graphics_OLED_circle(20, 53, 8);
     Graphics_OLED_rect(105, 7, 11, 11);
+    Graphics_OLED_bindAt(16, 11, 0, &counter, 1, "%4u");
 }
 
 
 void etOut1()
 {
-    display1();
+    counter = counter + 1;
 }
 
 
