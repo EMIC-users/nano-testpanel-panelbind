@@ -15,6 +15,7 @@
 void onReset();
 void display1(void);
 void etOut1();
+void eI2C(char* tag, const streamIn_t* const msg);
 
 #endif /* USERFNCFILE_H */
 

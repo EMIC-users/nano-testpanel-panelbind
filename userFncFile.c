@@ -35,12 +35,29 @@ void display1(void)
     Graphics_OLED_circle(20, 53, 8);
     Graphics_OLED_rect(105, 7, 11, 11);
     Graphics_OLED_bindAt(16, 11, 0, &counter, 1, "%4u");
+    Graphics_OLED_bindAt(99, 51, 0, &miVar, 0, "%4u");
 }
 
 
 void etOut1()
 {
+    LEDs_Led1_blink(100, 101, 1);
     counter = counter + 1;
+    pI2C("CNT\t%u", counter);
+}
+
+
+void eI2C(char* tag, const streamIn_t* const msg)
+{
+    LEDs_Led2_blink(100, 101, 1);
+    if (strncmp(tag, "miVar", 5) == 0)
+    {
+        miVar = streamIn_t_ptr_to_uint8_t((streamIn_t*)msg);
+    }
+    else
+    {
+        /* default case - no action */
+    }
 }
 
 

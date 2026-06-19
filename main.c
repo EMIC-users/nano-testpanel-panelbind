@@ -28,6 +28,8 @@ int main(void)
 	onReset();
 	do
 	{
+		LEDs_Led1_poll();
+		LEDs_Led2_poll();
 		timer1_Poll();
 		Graphics_OLED_poll();
 		Keyboard_Pad_poll();
