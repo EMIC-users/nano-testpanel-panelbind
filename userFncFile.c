@@ -20,6 +20,7 @@ char key_pad;
 char key_nav;
 uint64_t bigcounter = 0;
 char keychar = 65;
+uint16_t RPM = 0;
 
 void onReset()
 {
@@ -35,7 +36,7 @@ void display1(void)
     Graphics_OLED_circle(20, 53, 8);
     Graphics_OLED_rect(105, 7, 11, 11);
     Graphics_OLED_bindAt(16, 11, 0, &counter, 1, "%4u");
-    Graphics_OLED_bindAt(99, 51, 0, &miVar, 0, "%4u");
+    Graphics_OLED_bindAt(99, 51, 0, &RPM, 1, "%4u");
 }
 
 
@@ -53,6 +54,10 @@ void eI2C(char* tag, const streamIn_t* const msg)
     if (strncmp(tag, "miVar", 5) == 0)
     {
         miVar = streamIn_t_ptr_to_uint8_t((streamIn_t*)msg);
+    }
+    else if (strncmp(tag, "RPM", 3) == 0)
+    {
+        RPM = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
     }
     else
     {
