@@ -85,7 +85,7 @@ uint32_t streamIn_t_ptr_to_uint32_t(streamIn_t* dataIn)
 
 }
 
-uint64_t streamIn_t_ptr_to_uint64(streamIn_t* dataIn)
+uint64_t streamIn_t_ptr_to_uint64_t(streamIn_t* dataIn)
 {
     char str[16];
     char* strPtr = str;

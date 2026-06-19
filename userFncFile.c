@@ -18,40 +18,30 @@ uint16_t counter = 0;
 uint8_t miVar;
 char key_pad;
 char key_nav;
+uint64_t bigcounter = 0;
+char keychar = 65;
 
 void onReset()
 {
-    perrolLoco();
-    setTime1(1000, 'A');
+    Graphics_OLED_clear();
+    Graphics_OLED_bindAt(60, 0, 1, counter, 1, "%5u");
+    Graphics_OLED_bindAt(0, 20, 1, bigcounter, 7, "%10llu");
+    Graphics_OLED_bindAt(0, 40, 1, keychar, 9, "%c");
+    setTime1(5000, 'T');
+}
+
+
+void display1(void)
+{
+    Graphics_OLED_clear();
+    Graphics_OLED_circle(20, 53, 8);
+    Graphics_OLED_rect(105, 7, 11, 11);
 }
 
 
 void etOut1()
 {
-    LEDs_Led1_state(2);
-    counter = counter + 1;
-}
-
-
-void Keyboard_Nav_onPress(uint8_t key)
-{
-    key_nav = (char)(key);
-    Graphics_OLED_printAt(20, 20, 0, "NAV:%u ,%c ", key, key_nav);
-}
-
-
-void Keyboard_Pad_onPress(uint8_t key)
-{
-    key_pad = (char)(key);
-    Graphics_OLED_printAt(20, 40, 0, "PAD:%u ,%c", key, key_pad);
-}
-
-
-void perrolLoco(void)
-{
-    Graphics_OLED_clear();
-    Graphics_OLED_printAt(105, 53, 0, "PAD");
-    Graphics_OLED_printAt(108, 2, 0, "NAV");
+    display1();
 }
 
 

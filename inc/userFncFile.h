@@ -13,10 +13,8 @@
 
 /* Function Prototypes */
 void onReset();
+void display1(void);
 void etOut1();
-void Keyboard_Nav_onPress(uint8_t key);
-void Keyboard_Pad_onPress(uint8_t key);
-void perrolLoco(void);
 
 #endif /* USERFNCFILE_H */
 

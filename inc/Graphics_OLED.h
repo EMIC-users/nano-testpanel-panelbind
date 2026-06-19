@@ -17,7 +17,6 @@
 #define GFX_FONT_7X9    1
 #define GFX_FONT_16X32  2
 
-/* bindAt value types (must match the `type` argument of bindAt) */
 #define GFX_BIND_U8     0
 #define GFX_BIND_U16    1
 #define GFX_BIND_U32    2
@@ -25,9 +24,16 @@
 #define GFX_BIND_I16    4
 #define GFX_BIND_I32    5
 #define GFX_BIND_FLOAT  6
+#define GFX_BIND_U64    7
+#define GFX_BIND_I64    8
+#define GFX_BIND_CHAR   9
 
 /* Max number of simultaneously bound fields (static, no heap) */
 #define GFX_OLED_MAX_BINDS  8
+
+/*==================[types]==================================================*/
+
+typedef char* (*gfxProvider_t)(void* var, uint8_t type, char* mask);
 
 /*==================[external data declaration]==============================*/
 
@@ -46,10 +52,13 @@ void Graphics_OLED_clear(void);
 
 
 
-void Graphics_OLED_printAt(uint8_t x, uint8_t y, uint8_t fontId, char* format, ...);
+
+void Graphics_OLED_bindAt(uint8_t x, uint8_t y, uint8_t fontId, void* var, uint8_t type, char* format);
 
 
+void Graphics_OLED_rect(uint8_t x, uint8_t y, uint8_t w, uint8_t h);
 
+void Graphics_OLED_circle(uint8_t x, uint8_t y, uint8_t r);
 
 /*==================[end of file]============================================*/
 #endif /* GRAPHICS_OLED_H_ */

@@ -127,7 +127,6 @@ void Keyboard_Nav_poll(void)
                     if (pressed && !keyState[idx])
                     {
                         keyState[idx] = 1;
-                        Keyboard_Nav_onPress(kbdMap[idx]);
                     }
                     else if (!pressed && keyState[idx])
                     {
